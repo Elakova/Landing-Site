@@ -1,0 +1,552 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Matter — Superintelligent Vision for the Physical World</title>
+  <meta name="description" content="Matter builds breakthrough imaging technology and large world models for superintelligent vision across aerospace, robotics, and applications." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- Navigation -->
+  <nav id="navbar" class="navbar">
+    <div class="nav-inner">
+      <a href="#" class="nav-logo" id="logo-link">
+        <svg class="logo-svg" viewBox="0 0 80 20" fill="none">
+          <text x="0" y="16" font-family="Inter" font-weight="800" font-size="16" fill="currentColor">MATTER</text>
+        </svg>
+      </a>
+      <div class="nav-links" id="nav-links">
+        <a href="aerospace.html"    class="nav-link" data-nav="aerospace">Aerospace</a>
+        <a href="robotics.html"     class="nav-link" data-nav="robotics">Robotics</a>
+        <a href="applications.html" class="nav-link" data-nav="applications">Applications</a>
+        <a href="technology.html"   class="nav-link" data-nav="technology">Technology</a>
+        <a href="#press"            class="nav-link" data-nav="press">Press Releases</a>
+        <a href="team.html"         class="nav-link" data-nav="team">Team</a>
+        <a href="#access"           class="nav-cta"  id="early-access-btn">Early Access</a>
+      </div>
+      <button class="nav-hamburger" id="hamburger" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- Mobile Menu -->
+  <div class="mobile-menu" id="mobile-menu">
+    <div class="mobile-menu-inner">
+      <a href="aerospace.html"    class="mobile-link">Aerospace</a>
+      <a href="robotics.html"     class="mobile-link">Robotics</a>
+      <a href="applications.html" class="mobile-link">Applications</a>
+      <a href="technology.html"   class="mobile-link">Technology</a>
+      <a href="#press"            class="mobile-link">Press Releases</a>
+      <a href="team.html"         class="mobile-link">Team</a>
+      <a href="#access"           class="mobile-link mobile-cta">Early Access</a>
+    </div>
+  </div>
+
+  <!-- ==================== HERO SECTION ==================== -->
+  <section class="hero" id="hero">
+    <div class="hero-video-wrap">
+      <canvas id="hero-canvas"></canvas>
+      <div class="hero-scan-overlay">
+        <div class="scan-line" id="scan-line"></div>
+      </div>
+      <!-- Floating technical labels -->
+      <div class="tech-label" id="label-1" style="top:28%; left:22%;">
+        <span class="label-dot"></span>
+        <div class="label-content">
+          <span class="label-title mono">MATERIAL SCAN</span>
+          <span class="label-value mono">0.37 mm RMS</span>
+        </div>
+      </div>
+      <div class="tech-label" id="label-2" style="top:55%; left:62%;">
+        <span class="label-dot"></span>
+        <div class="label-content">
+          <span class="label-title mono">THERMAL</span>
+          <span class="label-value mono">38.2°C</span>
+        </div>
+      </div>
+      <div class="tech-label" id="label-3" style="top:40%; left:70%;">
+        <span class="label-dot"></span>
+        <div class="label-content">
+          <span class="label-title mono">SPECTRAL BAND</span>
+          <span class="label-value mono">940 nm</span>
+        </div>
+      </div>
+      <div class="tech-label" id="label-4" style="top:65%; left:25%;">
+        <span class="label-dot"></span>
+        <div class="label-content">
+          <span class="label-title mono">RESOLUTION</span>
+          <span class="label-value mono">0.05 GSD</span>
+        </div>
+      </div>
+      <div class="cross-hair" id="crosshair-1" style="top:27%; left:48%;"></div>
+      <div class="cross-hair" id="crosshair-2" style="top:60%; left:35%;"></div>
+    </div>
+
+    <div class="hero-content">
+      <h1 class="hero-headline" id="hero-headline">
+        <span class="hero-line" id="hero-line-1">Superintelligent</span>
+        <span class="hero-line" id="hero-line-2">Vision for the</span>
+        <span class="hero-line" id="hero-line-3">Physical World</span>
+      </h1>
+    </div>
+    <div class="hero-bottom">
+      <p class="hero-sub" id="hero-sub">Breakthrough Imaging + Large World Model</p>
+      <div class="scroll-indicator" id="scroll-indicator">
+        <div class="scroll-mouse">
+          <div class="scroll-wheel"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== VISION SECTION ==================== -->
+  <section class="vision-section" id="vision">
+    <div class="container">
+      <div class="reveal-block" data-reveal>
+        <span class="section-tag mono">01 — VISION</span>
+      </div>
+      <div class="vision-text-wrap">
+        <p class="vision-lead reveal-block" data-reveal>
+          We exist at a frontier—where the physical world becomes legible to machines not just visually, but spectrally, thermally, and structurally. Matter gives systems the ability to see what no eye or camera has ever seen.
+        </p>
+        <div class="vision-cols">
+          <div class="vision-col reveal-block" data-reveal>
+            <p>Our ultraspectral sensors capture hundreds of spectral bands simultaneously, revealing hidden properties of matter—moisture content, material composition, structural integrity—across vast scales.</p>
+          </div>
+          <div class="vision-col reveal-block" data-reveal>
+            <p>Paired with our breakthrough Large World Model, systems can not only perceive but understand and predict. From satellite orbits to centimeter-accurate ground truth, the gap between data and insight collapses.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== COUNTDOWN / STATS ==================== -->
+  <section class="stats-section" id="stats">
+    <div class="stats-inner">
+      <div class="stat-item reveal-block" data-reveal>
+        <span class="stat-num" data-count="500">0</span>
+        <span class="stat-unit">+</span>
+        <span class="stat-label mono">Spectral Bands</span>
+      </div>
+      <div class="stat-divider"></div>
+      <div class="stat-item reveal-block" data-reveal>
+        <span class="stat-num" data-count="0.05">0</span>
+        <span class="stat-unit">cm</span>
+        <span class="stat-label mono">Ground Resolution</span>
+      </div>
+      <div class="stat-divider"></div>
+      <div class="stat-item reveal-block" data-reveal>
+        <span class="stat-num" data-count="100">0</span>
+        <span class="stat-unit">%</span>
+        <span class="stat-label mono">Real-time Processing</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== AEROSPACE SECTION ==================== -->
+  <section class="feature-section dark-section" id="aerospace">
+    <div class="feature-sticky-wrap">
+      <div class="feature-visual">
+        <canvas id="satellite-canvas"></canvas>
+      </div>
+      <div class="feature-content-stack">
+        <div class="feature-intro reveal-block" data-reveal>
+          <span class="section-tag mono light-tag">02 — AEROSPACE</span>
+          <h2 class="feature-heading">Orbital Intelligence</h2>
+          <p class="feature-body">From low-earth orbit to stratospheric platforms, Matter's imaging payloads transform satellites and UAVs into superintelligent observers—seeing through clouds, reading material signatures, and mapping the world in unprecedented spectral depth.</p>
+        </div>
+        <div class="feature-cards">
+          <div class="feat-card reveal-block" data-reveal>
+            <div class="feat-card-icon">
+              <svg viewBox="0 0 40 40" fill="none">
+                <circle cx="20" cy="20" r="18" stroke="currentColor" stroke-width="1"/>
+                <circle cx="20" cy="20" r="6" stroke="currentColor" stroke-width="1"/>
+                <line x1="20" y1="2" x2="20" y2="38" stroke="currentColor" stroke-width="1"/>
+                <line x1="2" y1="20" x2="38" y2="20" stroke="currentColor" stroke-width="1"/>
+              </svg>
+            </div>
+            <h3>Hyperspectral Payload</h3>
+            <p>Compact, high-throughput imaging systems engineered for satellite integration with power-optimized FPGA pipelines.</p>
+          </div>
+          <div class="feat-card reveal-block" data-reveal>
+            <div class="feat-card-icon">
+              <svg viewBox="0 0 40 40" fill="none">
+                <path d="M20 4L36 32H4L20 4Z" stroke="currentColor" stroke-width="1"/>
+                <path d="M20 14L28 28H12L20 14Z" stroke="currentColor" stroke-width="1"/>
+              </svg>
+            </div>
+            <h3>SAR Fusion</h3>
+            <p>Synthetic aperture radar fused with optical hyperspectral data for all-weather, day-night persistent surveillance.</p>
+          </div>
+          <div class="feat-card reveal-block" data-reveal>
+            <div class="feat-card-icon">
+              <svg viewBox="0 0 40 40" fill="none">
+                <rect x="4" y="4" width="32" height="32" rx="2" stroke="currentColor" stroke-width="1"/>
+                <path d="M4 14H36M14 4V36" stroke="currentColor" stroke-width="1"/>
+              </svg>
+            </div>
+            <h3>Mission Planning AI</h3>
+            <p>Autonomous tasking intelligence that optimizes orbit passes, imaging windows, and downlink bandwidth in real time.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== ROBOTICS SECTION ==================== -->
+  <section class="feature-section light-section" id="robotics">
+    <div class="container">
+      <div class="split-layout">
+        <div class="split-left">
+          <span class="section-tag mono dark-tag reveal-block" data-reveal>03 — ROBOTICS</span>
+          <h2 class="feature-heading dark reveal-block" data-reveal>Embodied Spectral Perception</h2>
+          <p class="feature-body dark reveal-block" data-reveal>Give autonomous systems eyes that see through material—enabling robots to navigate, inspect, and interact with the physical world at a level of precision previously impossible.</p>
+          <a href="#access" class="btn-outline dark-btn reveal-block" data-reveal>Learn More</a>
+        </div>
+        <div class="split-right reveal-block" data-reveal>
+          <div class="robotics-visual">
+            <canvas id="robotics-canvas"></canvas>
+            <div class="spec-overlay">
+              <div class="spec-row">
+                <span class="mono spec-key">Frame Rate</span>
+                <span class="mono spec-val" id="spec-fps">120 Hz</span>
+              </div>
+              <div class="spec-row">
+                <span class="mono spec-key">Latency</span>
+                <span class="mono spec-val" id="spec-lat">2.1 ms</span>
+              </div>
+              <div class="spec-row">
+                <span class="mono spec-key">Bands</span>
+                <span class="mono spec-val" id="spec-bands">512</span>
+              </div>
+              <div class="spec-row">
+                <span class="mono spec-key">FOV</span>
+                <span class="mono spec-val" id="spec-fov">84°</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== APPLICATIONS ==================== -->
+  <section class="apps-section" id="applications">
+    <div class="container">
+      <div class="reveal-block" data-reveal>
+        <span class="section-tag mono">04 — APPLICATIONS</span>
+        <h2 class="section-heading">Where Matter Sees Further</h2>
+      </div>
+      <div class="tabs-wrap">
+        <div class="tabs-nav" id="tabs-nav">
+          <button class="tab-btn active" data-tab="mining" id="tab-mining">Mining</button>
+          <button class="tab-btn" data-tab="agriculture" id="tab-agriculture">Agriculture</button>
+          <button class="tab-btn" data-tab="infrastructure" id="tab-infrastructure">Infrastructure</button>
+          <button class="tab-btn" data-tab="defense" id="tab-defense">Defense</button>
+          <button class="tab-btn" data-tab="climate" id="tab-climate">Climate</button>
+        </div>
+        <div class="tabs-content">
+          <div class="tab-panel active" id="panel-mining">
+            <div class="tab-visual">
+              <canvas id="canvas-mining" class="app-canvas"></canvas>
+              <div class="hover-reveal">
+                <span class="mono">Hover to reveal spectral data</span>
+              </div>
+            </div>
+            <div class="tab-info">
+              <h3>Mineral Identification at Scale</h3>
+              <p>Precisely identify ore-grade minerals, detect subsurface anomalies, and map geological formations with submeter accuracy from airborne platforms.</p>
+              <ul class="spec-list">
+                <li><span class="mono">→</span> Ore grade estimation</li>
+                <li><span class="mono">→</span> Geological mapping</li>
+                <li><span class="mono">→</span> Tailings monitoring</li>
+              </ul>
+            </div>
+          </div>
+          <div class="tab-panel" id="panel-agriculture">
+            <div class="tab-visual">
+              <canvas id="canvas-agriculture" class="app-canvas"></canvas>
+              <div class="hover-reveal">
+                <span class="mono">Hover to reveal spectral data</span>
+              </div>
+            </div>
+            <div class="tab-info">
+              <h3>Precision Crop Intelligence</h3>
+              <p>Detect plant stress, soil moisture variability, and nutrient deficiencies before they become visible to the human eye—enabling targeted interventions.</p>
+              <ul class="spec-list">
+                <li><span class="mono">→</span> Crop stress detection</li>
+                <li><span class="mono">→</span> Yield prediction</li>
+                <li><span class="mono">→</span> Irrigation optimization</li>
+              </ul>
+            </div>
+          </div>
+          <div class="tab-panel" id="panel-infrastructure">
+            <div class="tab-visual">
+              <canvas id="canvas-infrastructure" class="app-canvas"></canvas>
+              <div class="hover-reveal">
+                <span class="mono">Hover to reveal spectral data</span>
+              </div>
+            </div>
+            <div class="tab-info">
+              <h3>Structural Integrity Mapping</h3>
+              <p>Non-destructive inspection of bridges, pipelines, and buildings at scale. Identify material fatigue, moisture intrusion, and corrosion before failure.</p>
+              <ul class="spec-list">
+                <li><span class="mono">→</span> Corrosion detection</li>
+                <li><span class="mono">→</span> Delamination mapping</li>
+                <li><span class="mono">→</span> Thermal anomalies</li>
+              </ul>
+            </div>
+          </div>
+          <div class="tab-panel" id="panel-defense">
+            <div class="tab-visual">
+              <canvas id="canvas-defense" class="app-canvas"></canvas>
+              <div class="hover-reveal">
+                <span class="mono">Hover to reveal spectral data</span>
+              </div>
+            </div>
+            <div class="tab-info">
+              <h3>Intelligence, Surveillance & Reconnaissance</h3>
+              <p>All-weather persistent surveillance with material discrimination, camouflage penetration, and autonomous threat classification at theater scale.</p>
+              <ul class="spec-list">
+                <li><span class="mono">→</span> Camouflage penetration</li>
+                <li><span class="mono">→</span> Threat classification</li>
+                <li><span class="mono">→</span> Change detection</li>
+              </ul>
+            </div>
+          </div>
+          <div class="tab-panel" id="panel-climate">
+            <div class="tab-visual">
+              <canvas id="canvas-climate" class="app-canvas"></canvas>
+              <div class="hover-reveal">
+                <span class="mono">Hover to reveal spectral data</span>
+              </div>
+            </div>
+            <div class="tab-info">
+              <h3>Environmental Monitoring</h3>
+              <p>Track methane emissions, deforestation events, wildfire risk zones, and ocean health indicators with temporal persistence and global coverage.</p>
+              <ul class="spec-list">
+                <li><span class="mono">→</span> Emissions tracking</li>
+                <li><span class="mono">→</span> Wildfire risk</li>
+                <li><span class="mono">→</span> Ocean health</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== TECHNOLOGY SECTION ==================== -->
+  <section class="tech-section dark-section" id="technology">
+    <div class="container">
+      <div class="reveal-block" data-reveal>
+        <span class="section-tag mono light-tag">05 — TECHNOLOGY</span>
+        <h2 class="section-heading light">The Stack Behind the Vision</h2>
+      </div>
+      <div class="tech-layers">
+        <div class="tech-layer reveal-block" data-reveal>
+          <div class="tech-layer-num mono">01</div>
+          <div class="tech-layer-bar">
+            <div class="tech-bar-fill" style="width:92%"></div>
+          </div>
+          <div class="tech-layer-info">
+            <h3>Ultraspectral Sensor Array</h3>
+            <p>500+ band hyperspectral capture in a compact form factor. Custom ASIC design with 14-bit dynamic range and SWIR/LWIR extension modules.</p>
+          </div>
+        </div>
+        <div class="tech-layer reveal-block" data-reveal>
+          <div class="tech-layer-num mono">02</div>
+          <div class="tech-layer-bar">
+            <div class="tech-bar-fill" style="width:78%"></div>
+          </div>
+          <div class="tech-layer-info">
+            <h3>Edge Processing Pipeline</h3>
+            <p>FPGA-based real-time radiometric calibration and spectral unmixing at 120 fps. Sub-2ms latency for closed-loop control systems.</p>
+          </div>
+        </div>
+        <div class="tech-layer reveal-block" data-reveal>
+          <div class="tech-layer-num mono">03</div>
+          <div class="tech-layer-bar">
+            <div class="tech-bar-fill" style="width:85%"></div>
+          </div>
+          <div class="tech-layer-info">
+            <h3>Large World Model</h3>
+            <p>A foundation model trained on petabytes of georegistered hyperspectral data. Understands material physics, temporal change, and spatial context at global scale.</p>
+          </div>
+        </div>
+        <div class="tech-layer reveal-block" data-reveal>
+          <div class="tech-layer-num mono">04</div>
+          <div class="tech-layer-bar">
+            <div class="tech-bar-fill" style="width:70%"></div>
+          </div>
+          <div class="tech-layer-info">
+            <h3>Analytics & API Platform</h3>
+            <p>Cloud-native delivery of spectral insights via REST and streaming APIs. Integration-ready for GIS platforms, digital twins, and autonomous systems.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== PRESS SECTION ==================== -->
+  <section class="press-section light-section" id="press">
+    <div class="container">
+      <div class="reveal-block" data-reveal>
+        <span class="section-tag mono dark-tag">06 — PRESS RELEASES</span>
+        <h2 class="section-heading dark">Latest from Matter</h2>
+      </div>
+      <div class="press-grid">
+        <article class="press-card reveal-block" data-reveal>
+          <span class="press-date mono">April 2026</span>
+          <h3 class="press-title">Matter Raises $120M Series B to Accelerate Commercial Satellite Deployments</h3>
+          <p class="press-excerpt">The funding round, led by Eclipse Ventures, will enable Matter to launch its first constellation of ultraspectral imaging satellites in 2027.</p>
+          <a href="#" class="press-link" aria-label="Read press release">Read More <span class="arrow">→</span></a>
+        </article>
+        <article class="press-card reveal-block" data-reveal>
+          <span class="press-date mono">March 2026</span>
+          <h3 class="press-title">Partnership with U.S. Department of Defense for ISR Applications</h3>
+          <p class="press-excerpt">Matter has been awarded a STRATFI contract to develop next-generation spectral imaging payloads for unmanned aerial systems.</p>
+          <a href="#" class="press-link" aria-label="Read press release">Read More <span class="arrow">→</span></a>
+        </article>
+        <article class="press-card reveal-block" data-reveal>
+          <span class="press-date mono">January 2026</span>
+          <h3 class="press-title">Matter's Large World Model Achieves State-of-the-Art on Mineral Mapping Benchmark</h3>
+          <p class="press-excerpt">Independent evaluation shows a 340% improvement in ore-grade estimation accuracy over traditional multispectral approaches.</p>
+          <a href="#" class="press-link" aria-label="Read press release">Read More <span class="arrow">→</span></a>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== TEAM SECTION ==================== -->
+  <section class="team-section" id="team" style="background:#F5F5F0;">
+    <div class="container">
+      <div class="reveal-block" data-reveal>
+        <span class="section-tag mono dark-tag">07 — TEAM</span>
+        <h2 class="section-heading dark">Built by World-Class Scientists & Engineers</h2>
+      </div>
+      <div class="team-grid">
+        <div class="team-card reveal-block" data-reveal>
+          <div class="team-avatar" style="background:#D0D0C8;">
+            <svg viewBox="0 0 80 80" fill="none"><circle cx="40" cy="30" r="16" fill="#888"/><ellipse cx="40" cy="68" rx="24" ry="16" fill="#888"/></svg>
+          </div>
+          <div class="team-info">
+            <h3>Dr. Elena Marsh</h3>
+            <span class="team-role mono">Co-Founder & CEO</span>
+            <p>Former Principal Scientist at NASA JPL. Ph.D. Astrophysics, Caltech. 15 years in spectral instrument design.</p>
+          </div>
+        </div>
+        <div class="team-card reveal-block" data-reveal>
+          <div class="team-avatar" style="background:#C8C8D0;">
+            <svg viewBox="0 0 80 80" fill="none"><circle cx="40" cy="30" r="16" fill="#888"/><ellipse cx="40" cy="68" rx="24" ry="16" fill="#888"/></svg>
+          </div>
+          <div class="team-info">
+            <h3>Dr. James Okafor</h3>
+            <span class="team-role mono">Co-Founder & CTO</span>
+            <p>Led Computer Vision at Waymo. Ph.D. EECS, MIT. Pioneer in multimodal sensor fusion architectures.</p>
+          </div>
+        </div>
+        <div class="team-card reveal-block" data-reveal>
+          <div class="team-avatar" style="background:#D0C8C8;">
+            <svg viewBox="0 0 80 80" fill="none"><circle cx="40" cy="30" r="16" fill="#888"/><ellipse cx="40" cy="68" rx="24" ry="16" fill="#888"/></svg>
+          </div>
+          <div class="team-info">
+            <h3>Dr. Yuki Tanaka</h3>
+            <span class="team-role mono">Chief Scientist, LWM</span>
+            <p>Research Lead at Google DeepMind. Ph.D. ML, Stanford. Architecture lead for Matter's foundation model.</p>
+          </div>
+        </div>
+        <div class="team-card reveal-block" data-reveal>
+          <div class="team-avatar" style="background:#C8D0C8;">
+            <svg viewBox="0 0 80 80" fill="none"><circle cx="40" cy="30" r="16" fill="#888"/><ellipse cx="40" cy="68" rx="24" ry="16" fill="#888"/></svg>
+          </div>
+          <div class="team-info">
+            <h3>Marcus Rivera</h3>
+            <span class="team-role mono">VP Engineering, Hardware</span>
+            <p>Principal Engineer at Planet Labs. Architect of next-gen Earth observation satellite constellations.</p>
+          </div>
+        </div>
+      </div>
+      <div class="join-bar reveal-block" data-reveal>
+        <span>We're building the future of perception. <strong>Join us.</strong></span>
+        <a href="#" class="btn-outline dark-btn">View Open Positions</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== EARLY ACCESS CTA ==================== -->
+  <section class="cta-section dark-section" id="access">
+    <div class="container">
+      <div class="cta-inner reveal-block" data-reveal>
+        <span class="section-tag mono light-tag">GET STARTED</span>
+        <h2 class="cta-headline">Request Early Access</h2>
+        <p class="cta-sub">Join the frontier of superintelligent vision. Work with our team to integrate Matter's sensing and intelligence stack into your platform.</p>
+        <form class="access-form" id="access-form">
+          <div class="form-row">
+            <input type="text" placeholder="Full Name" class="form-input" id="form-name" required />
+            <input type="email" placeholder="Work Email" class="form-input" id="form-email" required />
+          </div>
+          <div class="form-row single">
+            <select class="form-input form-select" id="form-use-case" required>
+              <option value="" disabled selected>Use Case</option>
+              <option value="aerospace">Aerospace</option>
+              <option value="robotics">Robotics</option>
+              <option value="mining">Mining</option>
+              <option value="agriculture">Agriculture</option>
+              <option value="infrastructure">Infrastructure</option>
+              <option value="defense">Defense</option>
+              <option value="other">Other</option>
+            </select>
+          </div>
+          <button type="submit" class="btn-primary" id="form-submit">Request Access</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== FOOTER ==================== -->
+  <footer class="site-footer" id="footer">
+    <div class="footer-inner">
+      <div class="footer-brand">
+        <span class="footer-logo">MATTER</span>
+        <p class="footer-tagline mono">Superintelligent Vision<br>for the Physical World</p>
+      </div>
+      <div class="footer-cols">
+        <div class="footer-col">
+          <span class="footer-col-title mono">Product</span>
+          <a href="#technology">Our Technology</a>
+          <a href="#aerospace">Aerospace</a>
+          <a href="#robotics">Robotics</a>
+          <a href="#applications">Applications</a>
+        </div>
+        <div class="footer-col">
+          <span class="footer-col-title mono">Company</span>
+          <a href="#team">Our Team</a>
+          <a href="#">Open Positions</a>
+          <a href="#press">Press Releases</a>
+          <a href="#access">Early Access</a>
+        </div>
+        <div class="footer-col">
+          <span class="footer-col-title mono">Contact</span>
+          <a href="mailto:contact@matter.com">contact@matter.com</a>
+          <a href="mailto:media@matter.com">media@matter.com</a>
+          <a href="#">Privacy Policy</a>
+          <a href="#">Cookie Settings</a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span class="mono">© 2026 Matter Technologies, Inc. All rights reserved.</span>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
