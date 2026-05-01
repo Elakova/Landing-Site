@@ -207,22 +207,15 @@
         <div class="split-right reveal-block" data-reveal>
           <div class="robotics-visual">
             <canvas id="robotics-canvas"></canvas>
-            <div class="spec-overlay">
-              <div class="spec-row">
-                <span class="mono spec-key">Frame Rate</span>
-                <span class="mono spec-val" id="spec-fps">120 Hz</span>
-              </div>
-              <div class="spec-row">
-                <span class="mono spec-key">Latency</span>
-                <span class="mono spec-val" id="spec-lat">2.1 ms</span>
-              </div>
-              <div class="spec-row">
-                <span class="mono spec-key">Bands</span>
-                <span class="mono spec-val" id="spec-bands">512</span>
-              </div>
-              <div class="spec-row">
-                <span class="mono spec-key">FOV</span>
-                <span class="mono spec-val" id="spec-fov">84°</span>
+                <div class="robotics-visual tradingview-box">
+                    <iframe
+                      src="https://www.tradingview.com/widgetembed/?frameElementId=tradingview_widget&symbol=OANDA%3AXAUUSD&interval=15&hidesidetoolbar=1&symboledit=1&saveimage=0&toolbarbg=ffffff&studies=[]&theme=light&style=1&timezone=Asia%2FSingapore&withdateranges=1&hideideas=1"
+                      class="tradingview-chart"
+                      frameborder="0"
+                      allowtransparency="true"
+                      scrolling="no">
+                    </iframe>
+                 </div>
               </div>
             </div>
           </div>
