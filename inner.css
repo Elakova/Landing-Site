@@ -226,3 +226,16 @@
   .ph-title { font-size: 60px; }
   .app-block-inner { padding: 0 24px; }
 }
+
+/* === TradingView Embed Fix === */
+.tradingview-box {
+  width: 100%;
+  height: 520px;
+  overflow: hidden;
+}
+
+.tradingview-chart {
+  width: 100%;
+  height: 100%;
+  border: none;
+}
