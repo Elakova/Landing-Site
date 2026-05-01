@@ -1014,3 +1014,22 @@ section { position: relative; }
   from { opacity: 0; transform: translateY(20px); }
   to   { opacity: 1; transform: none; }
 }
+
+/* === TradingView FULL COVER (Paste at bottom) === */
+.tradingview-overlay {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  border: none;
+  z-index: 10;
+}
+
+/* Hide original visuals underneath */
+#robotics-canvas {
+  opacity: 0;
+}
+
+.spec-overlay {
+  display: none;
+}
