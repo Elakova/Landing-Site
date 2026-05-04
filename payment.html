@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Join Aonami — Choose Your Plan</title>
+  <meta name="description" content="Choose your Aonami membership tier and get access to real-time trade signals, backtested strategies, and weekly market briefings." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="inner.css" />
+  <style>
+    /* ---- PAYMENT PAGE ---- */
+    .pay-wrap {
+      min-height: 100vh;
+      background: #0A0A0A;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      padding: calc(var(--nav-h) + 80px) 40px 100px;
+    }
+
+    .pay-header {
+      text-align: center;
+      margin-bottom: 64px;
+      opacity: 0;
+      animation: payFade 0.8s var(--ease-out) 0.2s forwards;
+    }
+    .pay-tag {
+      font-family: var(--font-mono);
+      font-size: 10px;
+      letter-spacing: 0.22em;
+      text-transform: uppercase;
+      color: var(--color-text-dim);
+      display: block;
+      margin-bottom: 20px;
+    }
+    .pay-title {
+      font-size: clamp(40px, 6vw, 72px);
+      font-weight: 800;
+      letter-spacing: -0.04em;
+      color: var(--color-text);
+      line-height: 1;
+      margin-bottom: 16px;
+    }
+    .pay-sub {
+      font-size: 16px;
+      color: var(--color-text-dim);
+      max-width: 480px;
+      margin: 0 auto;
+      line-height: 1.7;
+    }
+
+    /* ---- PLANS GRID ---- */
+    .plans-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 24px;
+      width: 100%;
+      max-width: 900px;
+    }
+
+    .plan-card {
+      background: #111111;
+      border: 1px solid var(--color-border);
+      padding: 48px 40px;
+      display: flex;
+      flex-direction: column;
+      position: relative;
+      transition: border-color var(--trans-med) var(--ease-out), transform var(--trans-med) var(--ease-out);
+      opacity: 0;
+      animation: payFade 0.9s var(--ease-out) forwards;
+    }
+    .plan-card:first-child { animation-delay: 0.35s; }
+    .plan-card:last-child  { animation-delay: 0.5s; }
+
+    .plan-card:hover {
+      border-color: rgba(240,240,240,0.25);
+      transform: translateY(-4px);
+    }
+    .plan-card.featured {
+      border-color: var(--color-dot);
+      background: #0E1610;
+    }
+    .plan-card.featured:hover {
+      border-color: rgba(110,231,183,0.7);
+    }
+
+    .featured-badge {
+      position: absolute;
+      top: -1px;
+      right: 28px;
+      background: var(--color-dot);
+      color: #0A0A0A;
+      font-family: var(--font-mono);
+      font-size: 9px;
+      font-weight: 700;
+      letter-spacing: 0.15em;
+      text-transform: uppercase;
+      padding: 5px 14px;
+    }
+
+    .plan-tier {
+      font-family: var(--font-mono);
+      font-size: 10px;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      color: var(--color-text-dim);
+      display: block;
+      margin-bottom: 16px;
+    }
+    .plan-card.featured .plan-tier { color: var(--color-dot); }
+
+    .plan-name {
+      font-size: 32px;
+      font-weight: 800;
+      letter-spacing: -0.03em;
+      color: var(--color-text);
+      margin-bottom: 32px;
+    }
+
+    .plan-divider {
+      width: 100%;
+      height: 1px;
+      background: var(--color-border);
+      margin-bottom: 28px;
+    }
+    .plan-card.featured .plan-divider { background: rgba(110,231,183,0.2); }
+
+    .plan-features {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+      margin-bottom: 40px;
+      flex: 1;
+    }
+    .plan-features li {
+      font-size: 14px;
+      color: var(--color-text-dim);
+      display: flex;
+      align-items: flex-start;
+      gap: 10px;
+      line-height: 1.5;
+    }
+    .plan-features li .arrow {
+      font-family: var(--font-mono);
+      font-size: 11px;
+      flex-shrink: 0;
+      margin-top: 2px;
+      color: rgba(240,240,240,0.3);
+    }
+    .plan-card.featured .plan-features li .arrow { color: var(--color-dot); }
+    .plan-features li.inactive { opacity: 0.35; }
+    .plan-features li.inactive .arrow { color: rgba(240,240,240,0.15); }
+
+    .plan-cta {
+      display: block;
+      width: 100%;
+      padding: 17px 32px;
+      font-size: 13px;
+      font-weight: 700;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      text-align: center;
+      text-decoration: none;
+      cursor: pointer;
+      transition: background var(--trans-fast), color var(--trans-fast), transform var(--trans-med) var(--ease-out);
+      border: 1.5px solid rgba(240,240,240,0.3);
+      color: var(--color-text);
+      background: transparent;
+    }
+    .plan-cta:hover {
+      background: var(--color-text);
+      color: var(--color-bg);
+      transform: translateY(-2px);
+    }
+    .plan-card.featured .plan-cta {
+      background: var(--color-dot);
+      color: #0A0A0A;
+      border-color: var(--color-dot);
+    }
+    .plan-card.featured .plan-cta:hover {
+      background: #88EFC7;
+      border-color: #88EFC7;
+      transform: translateY(-2px);
+    }
+
+    .plan-note {
+      font-family: var(--font-mono);
+      font-size: 10px;
+      letter-spacing: 0.08em;
+      color: var(--color-text-dim);
+      text-align: center;
+      margin-top: 12px;
+    }
+
+    /* ---- CONTACT STRIP ---- */
+    .pay-contact {
+      margin-top: 48px;
+      text-align: center;
+      opacity: 0;
+      animation: payFade 0.7s var(--ease-out) 0.7s forwards;
+    }
+    .pay-contact p {
+      font-family: var(--font-mono);
+      font-size: 11px;
+      letter-spacing: 0.12em;
+      color: var(--color-text-dim);
+      margin-bottom: 6px;
+    }
+    .pay-contact a {
+      font-size: 14px;
+      color: var(--color-text);
+      transition: opacity var(--trans-fast);
+    }
+    .pay-contact a:hover { opacity: 0.6; }
+
+    @keyframes payFade {
+      from { opacity: 0; transform: translateY(24px); }
+      to   { opacity: 1; transform: none; }
+    }
+
+    @media (max-width: 720px) {
+      .plans-grid { grid-template-columns: 1fr; max-width: 480px; }
+      .plan-card { padding: 36px 28px; }
+      .pay-wrap { padding: calc(var(--nav-h) + 48px) 24px 80px; }
+    }
+  </style>
+</head>
+<body class="page-dark">
+
+  <nav id="navbar" class="navbar scrolled">
+    <div class="nav-inner">
+      <a href="index.html" class="nav-logo">
+        <svg class="logo-svg" viewBox="0 0 80 20" fill="none">
+          <text x="0" y="16" font-family="Inter" font-weight="800" font-size="16" fill="currentColor">Aonami</text>
+        </svg>
+      </a>
+      <div class="nav-links">
+        <a href="product.html"      class="nav-link">Product</a>
+        <a href="strategy.html"     class="nav-link">Strategy</a>
+        <a href="index.html#press"  class="nav-link">Newsletter</a>
+        <a href="payment.html"      class="nav-cta nav-active-dark">Join Now</a>
+      </div>
+      <button class="nav-hamburger" id="hamburger" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <div class="mobile-menu" id="mobile-menu">
+    <div class="mobile-menu-inner">
+      <a href="product.html"      class="mobile-link">Product</a>
+      <a href="strategy.html"     class="mobile-link">Strategy</a>
+      <a href="index.html#press"  class="mobile-link">Newsletter</a>
+      <a href="payment.html"      class="mobile-link mobile-cta">Join Now</a>
+    </div>
+  </div>
+
+  <div class="pay-wrap">
+
+    <!-- Header -->
+    <div class="pay-header">
+      <span class="pay-tag">Membership Tiers</span>
+      <h1 class="pay-title">Choose Your Plan</h1>
+      <p class="pay-sub">Select the tier that fits your trading goals. Both plans include real-time signals and full access to our charting tools.</p>
+    </div>
+
+    <!-- Plans -->
+    <div class="plans-grid">
+
+      <!-- NORMAL -->
+      <div class="plan-card" id="plan-normal">
+        <span class="plan-tier">Entry Tier</span>
+        <div class="plan-name">Normal</div>
+        <div class="plan-divider"></div>
+        <ul class="plan-features">
+          <li><span class="arrow">→</span> Real-time trade signals (Forex &amp; Indices)</li>
+          <li><span class="arrow">→</span> Entry, stop loss &amp; take profit levels</li>
+          <li><span class="arrow">→</span> Proprietary TradingView indicators</li>
+          <li><span class="arrow">→</span> Weekly market structure briefing</li>
+          <li><span class="arrow">→</span> Risk &amp; position sizing guidance</li>
+          <li class="inactive"><span class="arrow">→</span> Gold &amp; Crypto signal coverage</li>
+          <li class="inactive"><span class="arrow">→</span> Full strategy vault access</li>
+          <li class="inactive"><span class="arrow">→</span> Private member community</li>
+        </ul>
+        <a href="https://buy.stripe.com/dRm8wPftv4Dvf9d6A48k801" class="plan-cta" id="btn-normal" target="_blank" rel="noopener">Get Normal Access</a>
+        <p class="plan-note">Secure checkout via Stripe</p>
+      </div>
+
+      <!-- PREMIUM -->
+      <div class="plan-card featured" id="plan-premium">
+        <span class="featured-badge">Most Popular</span>
+        <span class="plan-tier">Full Access</span>
+        <div class="plan-name">Premium</div>
+        <div class="plan-divider"></div>
+        <ul class="plan-features">
+          <li><span class="arrow">→</span> Real-time trade signals (all markets)</li>
+          <li><span class="arrow">→</span> Entry, stop loss &amp; take profit levels</li>
+          <li><span class="arrow">→</span> Proprietary TradingView indicators</li>
+          <li><span class="arrow">→</span> Weekly market structure briefing</li>
+          <li><span class="arrow">→</span> Risk &amp; position sizing guidance</li>
+          <li><span class="arrow">→</span> Gold &amp; Crypto signal coverage</li>
+          <li><span class="arrow">→</span> Full strategy vault access</li>
+          <li><span class="arrow">→</span> Private member community</li>
+        </ul>
+        <a href="https://buy.stripe.com/00w3cv1CF6LD6CHcYs8k800" class="plan-cta" id="btn-premium" target="_blank" rel="noopener">Get Premium Access</a>
+        <p class="plan-note">Secure checkout via Stripe</p>
+      </div>
+
+    </div>
+
+    <!-- Contact -->
+    <div class="pay-contact">
+      <p>Have a question before joining?</p>
+      <a href="mailto:aonamimotion@gmail.com">aonamimotion@gmail.com</a>
+    </div>
+
+  </div>
+
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <div class="footer-brand">
+        <span class="footer-logo">Aonami</span>
+        <p class="footer-tagline mono">Superintelligent Vision<br>for the Financial World</p>
+      </div>
+      <div class="footer-cols">
+        <div class="footer-col">
+          <span class="footer-col-title mono">Service</span>
+          <a href="product.html">Our Product</a>
+          <a href="strategy.html">Our Strategy</a>
+          <a href="index.html#applications">Markets</a>
+        </div>
+        <div class="footer-col">
+          <span class="footer-col-title mono">Company</span>
+          <a href="index.html#press">Newsletter</a>
+          <a href="payment.html">Join Now</a>
+        </div>
+        <div class="footer-col">
+          <span class="footer-col-title mono">Contact</span>
+          <a href="mailto:aonamimotion@gmail.com">aonamimotion@gmail.com</a>
+          <a href="#">Privacy Policy</a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span class="mono">© 2026 Aonami Studio, Inc. All rights reserved.</span>
+    </div>
+  </footer>
+
+  <script src="inner.js"></script>
+</body>
+</html>

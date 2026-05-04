@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Strategy — Aonami</title>
+  <meta name="description" content="Explore Aonami's core trading strategies — backtested, rule-based frameworks built for consistency, discipline, and controlled risk." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="inner.css" />
+</head>
+<body class="page-light">
+  <nav id="navbar" class="navbar light-nav">
+    <div class="nav-inner">
+      <a href="index.html" class="nav-logo"><svg class="logo-svg" viewBox="0 0 80 20" fill="none"><text x="0" y="16" font-family="Inter" font-weight="800" font-size="16" fill="currentColor">Aonami</text></svg></a>
+      <div class="nav-links">
+        <a href="product.html"      class="nav-link">Product</a>
+        <a href="strategy.html"     class="nav-link nav-active">Strategy</a>
+        <a href="index.html#press"  class="nav-link">Newsletter</a>
+        <a href="payment.html" class="nav-cta">Join Now</a>
+      </div>
+      <button class="nav-hamburger" id="hamburger" aria-label="Menu"><span></span><span></span><span></span></button>
+    </div>
+  </nav>
+  <div class="mobile-menu" id="mobile-menu" style="background:#F5F5F0;">
+    <div class="mobile-menu-inner">
+      <a href="product.html"    class="mobile-link" style="color:#111;">Product</a>
+      <a href="strategy.html"   class="mobile-link" style="color:#111;">Strategy</a>
+      <a href="index.html#press"  class="mobile-link" style="color:#111;">Newsletter</a>
+      <a href="payment.html" class="mobile-link mobile-cta" style="color:#111;border-color:rgba(17,17,17,0.4);">Join Now</a>
+    </div>
+  </div>
+
+  <section class="ph">
+    <div class="ph-tag mono">02 — STRATEGY</div>
+    <h1 class="ph-title">Our Trading<br>Framework</h1>
+    <p class="ph-sub">Five core strategies. All rule-based, backtested, and designed to produce consistent results with controlled drawdown.</p>
+  </section>
+
+  <!-- Strategy 1 -->
+  <section class="apps-list light-section" style="border-top:1px solid var(--color-border-dark);">
+    <div class="container">
+
+      <div class="app-block reveal-block" data-reveal>
+        <div class="app-block-inner">
+          <div class="app-block-info">
+            <span class="app-num mono">01</span>
+            <h2 class="app-heading dark">Key Level<br>Reversals</h2>
+            <p class="app-body dark">Our primary strategy identifies institutional supply and demand zones on higher timeframes, then waits for a confirmed reaction with momentum evidence before entering. No entry is taken without a clear rejection signal.</p>
+            <ul class="app-list dark">
+              <li><span class="mono">→</span> Higher timeframe level identification</li>
+              <li><span class="mono">→</span> Momentum confirmation required</li>
+              <li><span class="mono">→</span> Fixed 2:1 minimum RR</li>
+            </ul>
+          </div>
+          <div class="app-block-visual chart-visual chart-light">
+            <svg class="chart-svg" viewBox="0 0 420 260" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <!-- Grid lines -->
+              <line x1="40" y1="20" x2="40" y2="220" stroke="rgba(17,17,17,0.08)" stroke-width="1"/>
+              <line x1="40" y1="220" x2="400" y2="220" stroke="rgba(17,17,17,0.08)" stroke-width="1"/>
+              <line x1="40" y1="170" x2="400" y2="170" stroke="rgba(17,17,17,0.05)" stroke-width="1" stroke-dasharray="4 4"/>
+              <line x1="40" y1="120" x2="400" y2="120" stroke="rgba(17,17,17,0.05)" stroke-width="1" stroke-dasharray="4 4"/>
+              <line x1="40" y1="70"  x2="400" y2="70"  stroke="rgba(17,17,17,0.05)" stroke-width="1" stroke-dasharray="4 4"/>
+              
+              <!-- Horizontal key level -->
+              <line x1="40" y1="90" x2="400" y2="90" stroke="rgba(17,17,17,0.35)" stroke-width="1.5" stroke-dasharray="6 3"/>
+              <!-- Candles approaching level -->
+              <line x1="70"  y1="155" x2="70"  y2="115" stroke="rgba(17,17,17,0.5)" stroke-width="1"/>
+              <rect x="64"  y="128" width="12" height="18" fill="rgba(17,17,17,0.18)" stroke="rgba(17,17,17,0.5)" stroke-width="1"/>
+              <line x1="100" y1="148" x2="100" y2="108" stroke="rgba(17,17,17,0.5)" stroke-width="1"/>
+              <rect x="94"  y="118" width="12" height="20" fill="rgba(17,17,17,0.18)" stroke="rgba(17,17,17,0.5)" stroke-width="1"/>
+              <line x1="130" y1="138" x2="130" y2="95"  stroke="rgba(17,17,17,0.5)" stroke-width="1"/>
+              <rect x="124" y="100" width="12" height="28" fill="rgba(17,17,17,0.18)" stroke="rgba(17,17,17,0.5)" stroke-width="1"/>
+              <!-- Rejection: wick pokes above level, body stays below -->
+              <line x1="160" y1="78" x2="160" y2="115" stroke="#c0392b" stroke-width="1.5"/>
+              <rect x="154" y="95" width="12" height="22" fill="#e74c3c" stroke="#c0392b" stroke-width="1"/>
+              <!-- Reversal candles dropping -->
+              <line x1="190" y1="110" x2="190" y2="148" stroke="rgba(17,17,17,0.5)" stroke-width="1"/>
+              <rect x="184" y="112" width="12" height="28" fill="#e74c3c" stroke="#c0392b" stroke-width="1"/>
+              <line x1="220" y1="128" x2="220" y2="165" stroke="rgba(17,17,17,0.5)" stroke-width="1"/>
+              <rect x="214" y="132" width="12" height="28" fill="#e74c3c" stroke="#c0392b" stroke-width="1"/>
+              <line x1="250" y1="145" x2="250" y2="182" stroke="rgba(17,17,17,0.5)" stroke-width="1"/>
+              <rect x="244" y="150" width="12" height="26" fill="#e74c3c" stroke="#c0392b" stroke-width="1"/>
+              <!-- TP / SL lines -->
+              <line x1="155" y1="78" x2="400" y2="78" stroke="#27ae60" stroke-width="1" stroke-dasharray="5 4" opacity="0.6"/>
+              <line x1="155" y1="100" x2="400" y2="100" stroke="#c0392b" stroke-width="1" stroke-dasharray="5 4" opacity="0.45"/>
+              <text x="344" y="75" font-family="JetBrains Mono,monospace" font-size="8" fill="#27ae60" opacity="0.8">TP</text>
+              <text x="344" y="97" font-family="JetBrains Mono,monospace" font-size="8" fill="#c0392b" opacity="0.8">SL</text>
+
+              <!-- Label -->
+              <text x="44" y="244" font-family="JetBrains Mono,monospace" font-size="9" fill="rgba(17,17,17,0.3)" letter-spacing="1">KEY LEVEL REVERSALS</text>
+            </svg>
+          </div>
+        </div>
+      </div>
+
+      <div class="app-block app-block-alt dark-section reveal-block" data-reveal>
+        <div class="app-block-inner">
+          <div class="app-block-visual chart-visual chart-dark">
+            <svg class="chart-svg" viewBox="0 0 420 260" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <!-- Grid lines -->
+              <line x1="40" y1="20" x2="40" y2="220" stroke="rgba(255,255,255,0.07)" stroke-width="1"/>
+              <line x1="40" y1="220" x2="400" y2="220" stroke="rgba(255,255,255,0.07)" stroke-width="1"/>
+              <line x1="40" y1="170" x2="400" y2="170" stroke="rgba(255,255,255,0.04)" stroke-width="1" stroke-dasharray="4 4"/>
+              <line x1="40" y1="120" x2="400" y2="120" stroke="rgba(255,255,255,0.04)" stroke-width="1" stroke-dasharray="4 4"/>
+              <line x1="40" y1="70"  x2="400" y2="70"  stroke="rgba(255,255,255,0.04)" stroke-width="1" stroke-dasharray="4 4"/>
+              
+              <!-- Consolidation box -->
+              <rect x="55" y="110" width="160" height="55" fill="rgba(255,255,255,0.03)" stroke="rgba(255,255,255,0.12)" stroke-width="1" stroke-dasharray="5 3"/>
+              <!-- Consolidation candles -->
+              <line x1="70"  y1="122" x2="70"  y2="155" stroke="rgba(255,255,255,0.3)" stroke-width="1"/>
+              <rect x="64"  y="126" width="12" height="22" fill="rgba(255,255,255,0.08)" stroke="rgba(255,255,255,0.3)" stroke-width="1"/>
+              <line x1="95"  y1="118" x2="95"  y2="158" stroke="rgba(255,255,255,0.3)" stroke-width="1"/>
+              <rect x="89"  y="124" width="12" height="24" fill="rgba(255,255,255,0.08)" stroke="rgba(255,255,255,0.3)" stroke-width="1"/>
+              <line x1="120" y1="120" x2="120" y2="152" stroke="rgba(255,255,255,0.3)" stroke-width="1"/>
+              <rect x="114" y="125" width="12" height="20" fill="rgba(255,255,255,0.08)" stroke="rgba(255,255,255,0.3)" stroke-width="1"/>
+              <line x1="145" y1="116" x2="145" y2="154" stroke="rgba(255,255,255,0.3)" stroke-width="1"/>
+              <rect x="139" y="122" width="12" height="25" fill="rgba(255,255,255,0.08)" stroke="rgba(255,255,255,0.3)" stroke-width="1"/>
+              <line x1="170" y1="118" x2="170" y2="156" stroke="rgba(255,255,255,0.3)" stroke-width="1"/>
+              <rect x="164" y="123" width="12" height="24" fill="rgba(255,255,255,0.08)" stroke="rgba(255,255,255,0.3)" stroke-width="1"/>
+              <!-- Breakout candle -->
+              <line x1="205" y1="85" x2="205" y2="122" stroke="#6ee7b7" stroke-width="1.5"/>
+              <rect x="199" y="88" width="12" height="32" fill="#6ee7b7" stroke="#6ee7b7" stroke-width="1"/>
+              <!-- Follow-through candles -->
+              <line x1="230" y1="68" x2="230" y2="100" stroke="#6ee7b7" stroke-width="1.5"/>
+              <rect x="224" y="72" width="12" height="26" fill="#6ee7b7" stroke="#6ee7b7" stroke-width="1"/>
+              <line x1="255" y1="55" x2="255" y2="84" stroke="#6ee7b7" stroke-width="1.5"/>
+              <rect x="249" y="60" width="12" height="24" fill="#6ee7b7" stroke="#6ee7b7" stroke-width="1"/>
+              <line x1="280" y1="45" x2="280" y2="72" stroke="#6ee7b7" stroke-width="1.5"/>
+              <rect x="274" y="49" width="12" height="22" fill="#6ee7b7" stroke="#6ee7b7" stroke-width="1"/>
+              <!-- Resistance becomes support -->
+              <line x1="55" y1="110" x2="400" y2="110" stroke="rgba(110,231,183,0.3)" stroke-width="1" stroke-dasharray="6 4"/>
+
+              <!-- Label -->
+              <text x="44" y="244" font-family="JetBrains Mono,monospace" font-size="9" fill="rgba(255,255,255,0.2)" letter-spacing="1">STRUCTURE BREAKOUTS</text>
+            </svg>
+          </div>
+          <div class="app-block-info">
+            <span class="app-num mono" style="color:var(--color-text-dim);">02</span>
+            <h2 class="app-heading" style="color:var(--color-text);">Structure<br>Breakouts</h2>
+            <p class="app-body" style="color:var(--color-text-dim);">When price consolidates at a significant level and breaks with volume and momentum, we execute a breakout entry with a tight stop behind the broken structure. Ideal for trending markets and high-volatility sessions.</p>
+            <ul class="app-list" style="color:var(--color-text-dim);">
+              <li><span class="mono" style="color:var(--color-dot);">→</span> Consolidation pattern identification</li>
+              <li><span class="mono" style="color:var(--color-dot);">→</span> Volume-confirmed breakout entry</li>
+              <li><span class="mono" style="color:var(--color-dot);">→</span> Trailing stop management</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="app-block light-section reveal-block" data-reveal style="border-top:1px solid var(--color-border-dark);">
+        <div class="app-block-inner">
+          <div class="app-block-info">
+            <span class="app-num mono">03</span>
+            <h2 class="app-heading dark">Trend<br>Continuation</h2>
+            <p class="app-body dark">In established trending markets, we look for pullbacks to key moving averages and order blocks. An entry is only taken when the pullback shows signs of exhaustion and momentum resumes in the trend direction.</p>
+            <ul class="app-list dark">
+              <li><span class="mono">→</span> Higher high / higher low structure</li>
+              <li><span class="mono">→</span> Pullback to order block entry</li>
+              <li><span class="mono">→</span> Trend invalidation stop level</li>
+            </ul>
+          </div>
+          <div class="app-block-visual chart-visual chart-light">
+            <svg class="chart-svg" viewBox="0 0 420 260" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <!-- Grid lines -->
+              <line x1="40" y1="20" x2="40" y2="220" stroke="rgba(17,17,17,0.08)" stroke-width="1"/>
+              <line x1="40" y1="220" x2="400" y2="220" stroke="rgba(17,17,17,0.08)" stroke-width="1"/>
+              <line x1="40" y1="170" x2="400" y2="170" stroke="rgba(17,17,17,0.05)" stroke-width="1" stroke-dasharray="4 4"/>
+              <line x1="40" y1="120" x2="400" y2="120" stroke="rgba(17,17,17,0.05)" stroke-width="1" stroke-dasharray="4 4"/>
+              <line x1="40" y1="70"  x2="400" y2="70"  stroke="rgba(17,17,17,0.05)" stroke-width="1" stroke-dasharray="4 4"/>
+              
+              <!-- Uptrend line -->
+              <line x1="50" y1="200" x2="390" y2="60" stroke="rgba(17,17,17,0.12)" stroke-width="1.5" stroke-dasharray="8 4"/>
+              <!-- Rising candles -->
+              <line x1="70"  y1="195" x2="70"  y2="175" stroke="rgba(17,17,17,0.4)" stroke-width="1"/>
+              <rect x="64"  y="178" width="12" height="16" fill="#27ae60" stroke="#1e8449" stroke-width="1"/>
+              <line x1="95"  y1="185" x2="95"  y2="162" stroke="rgba(17,17,17,0.4)" stroke-width="1"/>
+              <rect x="89"  y="166" width="12" height="18" fill="#27ae60" stroke="#1e8449" stroke-width="1"/>
+              <!-- Pullback candles (red) -->
+              <line x1="120" y1="158" x2="120" y2="178" stroke="rgba(17,17,17,0.4)" stroke-width="1"/>
+              <rect x="114" y="162" width="12" height="14" fill="#e74c3c" stroke="#c0392b" stroke-width="1"/>
+              <line x1="145" y1="165" x2="145" y2="185" stroke="rgba(17,17,17,0.4)" stroke-width="1"/>
+              <rect x="139" y="168" width="12" height="14" fill="#e74c3c" stroke="#c0392b" stroke-width="1"/>
+              <!-- Order block zone -->
+              <rect x="112" y="160" width="48" height="30" fill="rgba(39,174,96,0.08)" stroke="rgba(39,174,96,0.3)" stroke-width="1" stroke-dasharray="4 3"/>
+              <!-- Resumption candles -->
+              <line x1="180" y1="155" x2="180" y2="132" stroke="rgba(17,17,17,0.4)" stroke-width="1"/>
+              <rect x="174" y="136" width="12" height="18" fill="#27ae60" stroke="#1e8449" stroke-width="1"/>
+              <line x1="205" y1="138" x2="205" y2="112" stroke="rgba(17,17,17,0.4)" stroke-width="1"/>
+              <rect x="199" y="116" width="12" height="20" fill="#27ae60" stroke="#1e8449" stroke-width="1"/>
+              <line x1="230" y1="120" x2="230" y2="95" stroke="rgba(17,17,17,0.4)" stroke-width="1"/>
+              <rect x="224" y="99" width="12" height="20" fill="#27ae60" stroke="#1e8449" stroke-width="1"/>
+              <line x1="255" y1="102" x2="255" y2="78" stroke="rgba(17,17,17,0.4)" stroke-width="1"/>
+              <rect x="249" y="82" width="12" height="18" fill="#27ae60" stroke="#1e8449" stroke-width="1"/>
+              <line x1="280" y1="84"  x2="280" y2="62" stroke="rgba(17,17,17,0.4)" stroke-width="1"/>
+              <rect x="274" y="66" width="12" height="16" fill="#27ae60" stroke="#1e8449" stroke-width="1"/>
+
+              <!-- Label -->
+              <text x="44" y="244" font-family="JetBrains Mono,monospace" font-size="9" fill="rgba(17,17,17,0.3)" letter-spacing="1">TREND CONTINUATION</text>
+            </svg>
+          </div>
+        </div>
+      </div>
+
+      <div class="app-block app-block-alt dark-section reveal-block" data-reveal>
+        <div class="app-block-inner">
+          <div class="app-block-visual chart-visual chart-dark">
+            <svg class="chart-svg" viewBox="0 0 420 260" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <!-- Grid lines -->
+              <line x1="40" y1="20" x2="40" y2="220" stroke="rgba(255,255,255,0.07)" stroke-width="1"/>
+              <line x1="40" y1="220" x2="400" y2="220" stroke="rgba(255,255,255,0.07)" stroke-width="1"/>
+              <line x1="40" y1="170" x2="400" y2="170" stroke="rgba(255,255,255,0.04)" stroke-width="1" stroke-dasharray="4 4"/>
+              <line x1="40" y1="120" x2="400" y2="120" stroke="rgba(255,255,255,0.04)" stroke-width="1" stroke-dasharray="4 4"/>
+              <line x1="40" y1="70"  x2="400" y2="70"  stroke="rgba(255,255,255,0.04)" stroke-width="1" stroke-dasharray="4 4"/>
+              
+              <!-- Equal highs line -->
+              <line x1="55" y1="82" x2="280" y2="82" stroke="rgba(255,255,255,0.2)" stroke-width="1" stroke-dasharray="5 3"/>
+              <text x="56" y="78" font-family="JetBrains Mono,monospace" font-size="7" fill="rgba(255,255,255,0.3)">EQH</text>
+              <!-- Candles building equal highs -->
+              <line x1="70"  y1="155" x2="70"  y2="102" stroke="rgba(255,255,255,0.3)" stroke-width="1"/>
+              <rect x="64"  y="110" width="12" height="38" fill="rgba(255,255,255,0.1)" stroke="rgba(255,255,255,0.3)" stroke-width="1"/>
+              <line x1="100" y1="148" x2="100" y2="98"  stroke="rgba(255,255,255,0.3)" stroke-width="1"/>
+              <rect x="94"  y="105" width="12" height="36" fill="rgba(255,255,255,0.1)" stroke="rgba(255,255,255,0.3)" stroke-width="1"/>
+              <line x1="130" y1="158" x2="130" y2="104" stroke="rgba(255,255,255,0.3)" stroke-width="1"/>
+              <rect x="124" y="112" width="12" height="36" fill="rgba(255,255,255,0.1)" stroke="rgba(255,255,255,0.3)" stroke-width="1"/>
+              <!-- Sweep candle: wick pierces above EQH -->
+              <line x1="165" y1="62" x2="165" y2="120" stroke="#e74c3c" stroke-width="2"/>
+              <rect x="159" y="100" width="12" height="25" fill="rgba(231,76,60,0.6)" stroke="#e74c3c" stroke-width="1"/>
+              <!-- Sweep label -->
+              <text x="180" y="66" font-family="JetBrains Mono,monospace" font-size="7" fill="#e74c3c" opacity="0.8">SWEEP</text>
+              <!-- Sharp reversal candles -->
+              <line x1="195" y1="108" x2="195" y2="148" stroke="#6ee7b7" stroke-width="1.5"/>
+              <rect x="189" y="112" width="12" height="32" fill="#6ee7b7" stroke="#6ee7b7" stroke-width="1"/>
+              <line x1="220" y1="122" x2="220" y2="162" stroke="#6ee7b7" stroke-width="1.5"/>
+              <rect x="214" y="126" width="12" height="30" fill="#6ee7b7" stroke="#6ee7b7" stroke-width="1"/>
+              <line x1="245" y1="138" x2="245" y2="176" stroke="#6ee7b7" stroke-width="1.5"/>
+              <rect x="239" y="142" width="12" height="28" fill="#6ee7b7" stroke="#6ee7b7" stroke-width="1"/>
+              <line x1="270" y1="155" x2="270" y2="190" stroke="#6ee7b7" stroke-width="1.5"/>
+              <rect x="264" y="160" width="12" height="24" fill="#6ee7b7" stroke="#6ee7b7" stroke-width="1"/>
+
+              <!-- Label -->
+              <text x="44" y="244" font-family="JetBrains Mono,monospace" font-size="9" fill="rgba(255,255,255,0.2)" letter-spacing="1">LIQUIDITY SWEEPS</text>
+            </svg>
+          </div>
+          <div class="app-block-info">
+            <span class="app-num mono" style="color:var(--color-text-dim);">04</span>
+            <h2 class="app-heading" style="color:var(--color-text);">Liquidity<br>Sweeps</h2>
+            <p class="app-body" style="color:var(--color-text-dim);">Institutional order flow often triggers stop hunts beyond obvious highs and lows before reversing sharply. We identify these liquidity sweep patterns and enter in the direction of the true move after the sweep is complete.</p>
+            <ul class="app-list" style="color:var(--color-text-dim);">
+              <li><span class="mono" style="color:var(--color-dot);">→</span> Equal highs / lows identification</li>
+              <li><span class="mono" style="color:var(--color-dot);">→</span> Stop hunt confirmation entry</li>
+              <li><span class="mono" style="color:var(--color-dot);">→</span> Fast target capture methodology</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="app-block light-section reveal-block" data-reveal style="border-top:1px solid var(--color-border-dark);">
+        <div class="app-block-inner">
+          <div class="app-block-info">
+            <span class="app-num mono">05</span>
+            <h2 class="app-heading dark">Macro<br>Catalyst Plays</h2>
+            <p class="app-body dark">High-impact economic data (NFP, CPI, Fed decisions) creates directional dislocations. We prepare pre-event bias analysis and enter only after the initial volatility spike has settled into a clear direction with technical confirmation.</p>
+            <ul class="app-list dark">
+              <li><span class="mono">→</span> Pre-event bias analysis</li>
+              <li><span class="mono">→</span> Post-spike directional confirmation</li>
+              <li><span class="mono">→</span> Extended target framework</li>
+            </ul>
+          </div>
+          <div class="app-block-visual chart-visual chart-light">
+            <svg class="chart-svg" viewBox="0 0 420 260" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <!-- Grid lines -->
+              <line x1="40" y1="20" x2="40" y2="220" stroke="rgba(17,17,17,0.08)" stroke-width="1"/>
+              <line x1="40" y1="220" x2="400" y2="220" stroke="rgba(17,17,17,0.08)" stroke-width="1"/>
+              <line x1="40" y1="170" x2="400" y2="170" stroke="rgba(17,17,17,0.05)" stroke-width="1" stroke-dasharray="4 4"/>
+              <line x1="40" y1="120" x2="400" y2="120" stroke="rgba(17,17,17,0.05)" stroke-width="1" stroke-dasharray="4 4"/>
+              <line x1="40" y1="70"  x2="400" y2="70"  stroke="rgba(17,17,17,0.05)" stroke-width="1" stroke-dasharray="4 4"/>
+              
+              <!-- Calm pre-event candles -->
+              <line x1="60"  y1="138" x2="60"  y2="122" stroke="rgba(17,17,17,0.4)" stroke-width="1"/>
+              <rect x="54"  y="124" width="12" height="12" fill="rgba(17,17,17,0.15)" stroke="rgba(17,17,17,0.4)" stroke-width="1"/>
+              <line x1="82"  y1="140" x2="82"  y2="120" stroke="rgba(17,17,17,0.4)" stroke-width="1"/>
+              <rect x="76"  y="122" width="12" height="14" fill="rgba(17,17,17,0.15)" stroke="rgba(17,17,17,0.4)" stroke-width="1"/>
+              <line x1="104" y1="136" x2="104" y2="120" stroke="rgba(17,17,17,0.4)" stroke-width="1"/>
+              <rect x="98"  y="122" width="12" height="12" fill="rgba(17,17,17,0.15)" stroke="rgba(17,17,17,0.4)" stroke-width="1"/>
+              <!-- Event line -->
+              <line x1="128" y1="30" x2="128" y2="215" stroke="rgba(17,17,17,0.3)" stroke-width="1.5" stroke-dasharray="4 4"/>
+              <text x="132" y="44" font-family="JetBrains Mono,monospace" font-size="7" fill="rgba(17,17,17,0.45)">EVENT</text>
+              <!-- Spike candle -->
+              <line x1="140" y1="50" x2="140" y2="178" stroke="rgba(17,17,17,0.5)" stroke-width="1.5"/>
+              <rect x="134" y="60" width="12" height="80" fill="rgba(231,76,60,0.5)" stroke="#c0392b" stroke-width="1"/>
+              <!-- Settling + directional candles -->
+              <line x1="165" y1="88" x2="165" y2="118" stroke="rgba(17,17,17,0.4)" stroke-width="1"/>
+              <rect x="159" y="90" width="12" height="24" fill="rgba(17,17,17,0.15)" stroke="rgba(17,17,17,0.4)" stroke-width="1"/>
+              <!-- Confirmed direction (up) -->
+              <line x1="192" y1="76" x2="192" y2="100" stroke="rgba(17,17,17,0.4)" stroke-width="1"/>
+              <rect x="186" y="80" width="12" height="20" fill="#27ae60" stroke="#1e8449" stroke-width="1"/>
+              <line x1="216" y1="62" x2="216" y2="86" stroke="rgba(17,17,17,0.4)" stroke-width="1"/>
+              <rect x="210" y="66" width="12" height="20" fill="#27ae60" stroke="#1e8449" stroke-width="1"/>
+              <line x1="240" y1="48" x2="240" y2="72" stroke="rgba(17,17,17,0.4)" stroke-width="1"/>
+              <rect x="234" y="52" width="12" height="20" fill="#27ae60" stroke="#1e8449" stroke-width="1"/>
+              <line x1="264" y1="38" x2="264" y2="60" stroke="rgba(17,17,17,0.4)" stroke-width="1"/>
+              <rect x="258" y="42" width="12" height="18" fill="#27ae60" stroke="#1e8449" stroke-width="1"/>
+              <!-- TP line -->
+              <line x1="185" y1="38" x2="390" y2="38" stroke="#27ae60" stroke-width="1" stroke-dasharray="5 4" opacity="0.5"/>
+              <text x="344" y="35" font-family="JetBrains Mono,monospace" font-size="8" fill="#27ae60" opacity="0.7">TP</text>
+
+              <!-- Label -->
+              <text x="44" y="244" font-family="JetBrains Mono,monospace" font-size="9" fill="rgba(17,17,17,0.3)" letter-spacing="1">MACRO CATALYST PLAYS</text>
+            </svg>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <section class="page-cta-strip dark-section">
+    <div class="container" style="text-align:center;">
+      <div class="reveal-block" data-reveal>
+        <span class="section-tag mono light-tag">Get Started</span>
+        <h2 class="section-heading light" style="margin-bottom:20px;">All Strategies</h2>
+        <p style="color:var(--color-text-dim);font-size:17px;margin-bottom:40px;">Join Aonami to access the full strategy vault with annotated examples, backtest data, and live signal integration.</p>
+        <a href="index.html#access" class="btn-outline light-btn">Request Early Access</a>
+      </div>
+    </div>
+  </section>
+
+  <footer class="site-footer"><div class="footer-inner"><div class="footer-brand"><span class="footer-logo">Aonami</span><p class="footer-tagline mono">Superintelligent Vision<br>for the Financial World</p></div><div class="footer-cols"><div class="footer-col"><span class="footer-col-title mono">Service</span><a href="product.html">Our Product</a><a href="strategy.html">Our Strategy</a><a href="index.html#applications">Markets</a></div><div class="footer-col"><span class="footer-col-title mono">Company</span><a href="index.html#press">Newsletter</a><a href="index.html#team">Team</a><a href="payment.html">Join Now</a></div><div class="footer-col"><span class="footer-col-title mono">Contact</span><a href="mailto:aonamimotion@gmail.com">aonamimotion@gmail.com</a><a href="mailto:aonamimotion@gmail.com">aonamimotion@gmail.com</a></div></div></div><div class="footer-bottom"><span class="mono">© 2026 Aonami Studio, Inc. All rights reserved.</span></div></footer>
+  <script src="inner.js"></script>
+</body>
+</html>

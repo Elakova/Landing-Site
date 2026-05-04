@@ -1,0 +1,673 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Aonami — Superintelligent Vision for the finance world </title>
+  <meta name="description" content="Matter builds breakthrough imaging technology and large world models for superintelligent vision across aerospace, robotics, and applications." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- Navigation -->
+  <nav id="navbar" class="navbar">
+    <div class="nav-inner">
+      <a href="#" class="nav-logo" id="logo-link">
+        <svg class="logo-svg" viewBox="0 0 80 20" fill="none">
+          <text x="0" y="16" font-family="Inter" font-weight="800" font-size="16" fill="currentColor">Aonami</text>
+        </svg>
+      </a>
+      <div class="nav-links" id="nav-links">
+        <a href="product.html"      class="nav-link" data-nav="product">Product</a>
+        <a href="strategy.html"     class="nav-link" data-nav="strategy">Strategy</a>
+        <a href="#press"            class="nav-link" data-nav="press">News Letter</a>
+        <a href="payment.html"      class="nav-cta"  id="join-now-btn">Join Now</a>
+      </div>
+      <button class="nav-hamburger" id="hamburger" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- Mobile Menu -->
+  <div class="mobile-menu" id="mobile-menu">
+    <div class="mobile-menu-inner">
+      <a href="product.html"      class="mobile-link">Product</a>
+      <a href="strategy.html"     class="mobile-link">Strategy</a>
+      <a href="#press"            class="mobile-link">News Letter</a>
+      <a href="payment.html"        class="mobile-link mobile-cta">Join Now</a>
+    </div>
+  </div>
+
+  <!-- ==================== HERO SECTION ==================== -->
+  <section class="hero" id="hero">
+    <div class="hero-video-wrap">
+      <canvas id="hero-canvas"></canvas>
+      <div class="hero-scan-overlay">
+        <div class="scan-line" id="scan-line"></div>
+      </div>
+      <!-- Floating technical labels -->
+      <div class="tech-label" id="label-1" style="top:28%; left:22%;">
+        <span class="label-dot"></span>
+        <div class="label-content">
+          <span class="label-title mono">XAUUSD</span>
+          <span class="label-value mono">$4788.32</span>
+        </div>
+      </div>
+      <div class="tech-label" id="label-2" style="top:55%; left:62%;">
+        <span class="label-dot"></span>
+        <div class="label-content">
+          <span class="label-title mono">GBPJPY</span>
+          <span class="label-value mono">+2.3%</span>
+        </div>
+      </div>
+      <div class="tech-label" id="label-3" style="top:40%; left:70%;">
+        <span class="label-dot"></span>
+        <div class="label-content">
+          <span class="label-title mono">NQ100</span>
+          <span class="label-value mono">~1.2%</span>
+        </div>
+      </div>
+      <div class="tech-label" id="label-4" style="top:65%; left:25%;">
+        <span class="label-dot"></span>
+        <div class="label-content">
+          <span class="label-title mono">S&P500</span>
+          <span class="label-value mono">+1.7%</span>
+        </div>
+      </div>
+      <div class="cross-hair" id="crosshair-1" style="top:27%; left:48%;"></div>
+      <div class="cross-hair" id="crosshair-2" style="top:60%; left:35%;"></div>
+    </div>
+
+    <div class="hero-content">
+      <h1 class="hero-headline" id="hero-headline">
+        <span class="hero-line" id="hero-line-1">Superintelligent</span>
+        <span class="hero-line" id="hero-line-2">Vision for the</span>
+        <span class="hero-line" id="hero-line-3">Financial World</span>
+      </h1>
+    </div>
+    <div class="hero-bottom">
+      <p class="hero-sub" id="hero-sub">Backtested Strategies + Solid Support Model</p>
+      <div class="scroll-indicator" id="scroll-indicator">
+        <div class="scroll-mouse">
+          <div class="scroll-wheel"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== VISION SECTION ==================== -->
+  <section class="vision-section" id="vision">
+    <div class="container">
+      <div class="reveal-block" data-reveal>
+        <span class="section-tag mono">01 — VISION</span>
+      </div>
+      <div class="vision-text-wrap">
+        <p class="vision-lead reveal-block" data-reveal>
+         A data-driven financial intelligence service that delivers high-probability market opportunities through structured analysis, combining price behavior, key levels, and confirmation-based execution frameworks—built for individuals who want clarity, discipline, and consistency in their financial decisions.
+        </p>
+        <div class="vision-cols">
+          <div class="vision-col reveal-block" data-reveal>
+            <p>A structured financial insights service delivering high-probability market opportunities through disciplined, confirmation-based analysis.</p>
+          </div>
+          <div class="vision-col reveal-block" data-reveal>
+            <p>A precision-driven financial system designed to provide clear, rule-based market insights with a focus on consistency, risk control, and clarity.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== COUNTDOWN / STATS ==================== -->
+  <section class="stats-section" id="stats">
+    <div class="stats-inner">
+      <div class="stat-item reveal-block" data-reveal>
+        <span class="stat-num" data-count="487">0</span>
+        <span class="stat-unit">+</span>
+        <span class="stat-label mono">Initiated Trades</span>
+      </div>
+      <div class="stat-divider"></div>
+      <div class="stat-item reveal-block" data-reveal>
+        <span class="stat-num" data-count="2 to 1">0</span>
+        <span class="stat-unit">RR</span>
+        <span class="stat-label mono">P & L</span>
+      </div>
+      <div class="stat-divider"></div>
+      <div class="stat-item reveal-block" data-reveal>
+        <span class="stat-num" data-count="87">0</span>
+        <span class="stat-unit">%</span>
+        <span class="stat-label mono">Win-rates</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== AEROSPACE SECTION ==================== -->
+  <section class="feature-section dark-section" id="aerospace">
+    <div class="feature-sticky-wrap">
+      <div class="feature-visual">
+        <canvas id="satellite-canvas"></canvas>
+      </div>
+      <div class="feature-content-stack">
+        <div class="feature-intro reveal-block" data-reveal>
+          <span class="section-tag mono light-tag">02 — ANALYSIS</span>
+          <h2 class="feature-heading">Real-Time Market Analysis</h2>
+          <p class="feature-body">A structured financial execution system designed around patience, confirmation, and disciplined decision-making—built to remove noise and elevate consistency.</p>
+        </div>
+        <div class="feature-cards">
+          <div class="feat-card reveal-block" data-reveal>
+            <div class="feat-card-icon">
+              <svg viewBox="0 0 40 40" fill="none">
+                <circle cx="20" cy="20" r="18" stroke="currentColor" stroke-width="1"/>
+                <circle cx="20" cy="20" r="6" stroke="currentColor" stroke-width="1"/>
+                <line x1="20" y1="2" x2="20" y2="38" stroke="currentColor" stroke-width="1"/>
+                <line x1="2" y1="20" x2="38" y2="20" stroke="currentColor" stroke-width="1"/>
+              </svg>
+            </div>
+            <h3>Strict Criteria</h3>
+            <p>Every opportunity follows a strict, rule-based framework requiring validated key levels, confirmed reactions, and clear risk parameters—if any condition isn’t met, no action is taken.</p>
+          </div>
+          <div class="feat-card reveal-block" data-reveal>
+            <div class="feat-card-icon">
+              <svg viewBox="0 0 40 40" fill="none">
+                <path d="M20 4L36 32H4L20 4Z" stroke="currentColor" stroke-width="1"/>
+                <path d="M20 14L28 28H12L20 14Z" stroke="currentColor" stroke-width="1"/>
+              </svg>
+            </div>
+            <h3>Back-tested Strategies</h3>
+            <p>A rigorously backtested financial strategy proven for consistency, performance, and controlled risk before real-world use.</p>
+          </div>
+          <div class="feat-card reveal-block" data-reveal>
+            <div class="feat-card-icon">
+              <svg viewBox="0 0 40 40" fill="none">
+                <rect x="4" y="4" width="32" height="32" rx="2" stroke="currentColor" stroke-width="1"/>
+                <path d="M4 14H36M14 4V36" stroke="currentColor" stroke-width="1"/>
+              </svg>
+            </div>
+            <h3>Confidence-driven system</h3>
+            <p>A confidence-driven financial system built on structured analysis and clear rules, designed to support consistent, disciplined decision-making with controlled risk.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== ROBOTICS SECTION ==================== -->
+  <section class="feature-section light-section" id="robotics">
+    <div class="container">
+      <div class="split-layout">
+        <div class="split-left">
+          <span class="section-tag mono dark-tag reveal-block" data-reveal>Structure</span>
+          <h2 class="feature-heading dark reveal-block" data-reveal>Tradingview Supported</h2>
+          <p class="feature-body dark reveal-block" data-reveal>Powered by proprietary indicators on TradingView, ensuring precise, real-time analysis within a trusted charting environment.</p>
+          <a href="#access" class="btn-outline dark-btn reveal-block" data-reveal>Learn More</a>
+        </div>
+        <div class="split-right reveal-block" data-reveal>
+          <div class="tradingview-box">
+            <iframe
+              src="https://www.tradingview.com/widgetembed/?frameElementId=tradingview_widget&symbol=FX%3AEURUSD&interval=60&hidesidetoolbar=0&symboledit=1&saveimage=0&toolbarbg=f1f3f6&studies=[]&theme=light&style=1&timezone=Asia%2FSingapore&withdateranges=1&hideideas=1"
+              class="tradingview-chart"
+              frameborder="0"
+              allowtransparency="true"
+              scrolling="no">
+            </iframe>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== APPLICATIONS ==================== -->
+  <section class="apps-section" id="applications">
+    <div class="container">
+      <div class="reveal-block" data-reveal>
+        <span class="section-tag mono">04 — MARKETS</span>
+        <h2 class="section-heading">Markets We Cover</h2>
+      </div>
+      <div class="tabs-wrap">
+        <div class="tabs-nav" id="tabs-nav">
+          <button class="tab-btn active" data-tab="forex" id="tab-forex">Forex</button>
+          <button class="tab-btn" data-tab="equities" id="tab-equities">Equities</button>
+          <button class="tab-btn" data-tab="commodities" id="tab-commodities">Commodities</button>
+          <button class="tab-btn" data-tab="crypto" id="tab-crypto">Crypto</button>
+          <button class="tab-btn" data-tab="indices" id="tab-indices">Indices</button>
+        </div>
+        <div class="tabs-content">
+          <div class="tab-panel active" id="panel-forex">
+            <div class="tab-visual tab-chart-visual">
+              <svg class="tab-chart-svg" viewBox="0 0 480 280" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <!-- Grid -->
+                <line x1="52" y1="18" x2="52" y2="240" stroke="rgba(255,255,255,0.06)" stroke-width="1"/>
+                <line x1="52" y1="240" x2="460" y2="240" stroke="rgba(255,255,255,0.06)" stroke-width="1"/>
+                <line x1="52" y1="190" x2="460" y2="190" stroke="rgba(255,255,255,0.04)" stroke-width="1" stroke-dasharray="4 4"/>
+                <line x1="52" y1="140" x2="460" y2="140" stroke="rgba(255,255,255,0.04)" stroke-width="1" stroke-dasharray="4 4"/>
+                <line x1="52" y1="90"  x2="460" y2="90"  stroke="rgba(255,255,255,0.04)" stroke-width="1" stroke-dasharray="4 4"/>
+                <line x1="52" y1="40"  x2="460" y2="40"  stroke="rgba(255,255,255,0.04)" stroke-width="1" stroke-dasharray="4 4"/>
+                <!-- Y labels -->
+                <text x="4" y="193" font-family="JetBrains Mono,monospace" font-size="8" fill="rgba(255,255,255,0.2)">1.082</text>
+                <text x="4" y="143" font-family="JetBrains Mono,monospace" font-size="8" fill="rgba(255,255,255,0.2)">1.086</text>
+                <text x="4" y="93"  font-family="JetBrains Mono,monospace" font-size="8" fill="rgba(255,255,255,0.2)">1.090</text>
+                
+                <!-- Key level -->
+                <line x1="52" y1="105" x2="460" y2="105" stroke="rgba(255,255,255,0.18)" stroke-width="1" stroke-dasharray="6 3"/>
+                <!-- Candles -->
+                <line x1="75"  y1="208" x2="75"  y2="178" stroke="rgba(255,255,255,0.25)" stroke-width="1"/>
+                <rect x="69"  y="182" width="12" height="22" fill="rgba(231,76,60,0.7)" stroke="#c0392b" stroke-width="1"/>
+                <line x1="98"  y1="200" x2="98"  y2="168" stroke="rgba(255,255,255,0.25)" stroke-width="1"/>
+                <rect x="92"  y="172" width="12" height="22" fill="rgba(231,76,60,0.7)" stroke="#c0392b" stroke-width="1"/>
+                <line x1="121" y1="190" x2="121" y2="155" stroke="rgba(255,255,255,0.25)" stroke-width="1"/>
+                <rect x="115" y="160" width="12" height="24" fill="rgba(110,231,183,0.8)" stroke="#6ee7b7" stroke-width="1"/>
+                <line x1="144" y1="172" x2="144" y2="138" stroke="rgba(255,255,255,0.25)" stroke-width="1"/>
+                <rect x="138" y="142" width="12" height="26" fill="rgba(110,231,183,0.8)" stroke="#6ee7b7" stroke-width="1"/>
+                <line x1="167" y1="155" x2="167" y2="120" stroke="rgba(255,255,255,0.25)" stroke-width="1"/>
+                <rect x="161" y="124" width="12" height="26" fill="rgba(110,231,183,0.8)" stroke="#6ee7b7" stroke-width="1"/>
+                <line x1="190" y1="138" x2="190" y2="108" stroke="rgba(255,255,255,0.25)" stroke-width="1"/>
+                <rect x="184" y="112" width="12" height="22" fill="rgba(110,231,183,0.8)" stroke="#6ee7b7" stroke-width="1"/>
+                <!-- Breakout + pullback -->
+                <line x1="213" y1="95" x2="213" y2="120" stroke="rgba(255,255,255,0.25)" stroke-width="1"/>
+                <rect x="207" y="98" width="12" height="20" fill="rgba(110,231,183,0.8)" stroke="#6ee7b7" stroke-width="1"/>
+                <line x1="236" y1="108" x2="236" y2="130" stroke="rgba(255,255,255,0.25)" stroke-width="1"/>
+                <rect x="230" y="111" width="12" height="16" fill="rgba(231,76,60,0.7)" stroke="#c0392b" stroke-width="1"/>
+                <line x1="259" y1="88" x2="259" y2="112" stroke="rgba(255,255,255,0.25)" stroke-width="1"/>
+                <rect x="253" y="92" width="12" height="18" fill="rgba(110,231,183,0.8)" stroke="#6ee7b7" stroke-width="1"/>
+                <line x1="282" y1="72" x2="282" y2="96" stroke="rgba(255,255,255,0.25)" stroke-width="1"/>
+                <rect x="276" y="76" width="12" height="18" fill="rgba(110,231,183,0.8)" stroke="#6ee7b7" stroke-width="1"/>
+                <line x1="305" y1="58" x2="305" y2="82" stroke="rgba(255,255,255,0.25)" stroke-width="1"/>
+                <rect x="299" y="62" width="12" height="18" fill="rgba(110,231,183,0.8)" stroke="#6ee7b7" stroke-width="1"/>
+                <!-- TP/SL -->
+                <line x1="207" y1="72" x2="460" y2="72" stroke="rgba(110,231,183,0.35)" stroke-width="1" stroke-dasharray="5 4"/>
+                <text x="420" y="69" font-family="JetBrains Mono,monospace" font-size="8" fill="#6ee7b7" opacity="0.7">TP</text>
+                <line x1="207" y1="128" x2="460" y2="128" stroke="rgba(231,76,60,0.3)" stroke-width="1" stroke-dasharray="5 4"/>
+                <text x="420" y="125" font-family="JetBrains Mono,monospace" font-size="8" fill="#e74c3c" opacity="0.7">SL</text>
+                <!-- Pair label -->
+                <text x="370" y="260" font-family="JetBrains Mono,monospace" font-size="9" fill="rgba(255,255,255,0.35)" letter-spacing="1">EUR/USD · H4</text>
+                <!-- Bottom label -->
+                <text x="56" y="260" font-family="JetBrains Mono,monospace" font-size="8" fill="rgba(255,255,255,0.2)" letter-spacing="1">FOREX</text>
+              </svg>
+            </div>
+            <div class="tab-info">
+              <h3>Foreign Exchange Markets</h3>
+              <p>Trade major and minor currency pairs with precision-timed entries based on validated key levels, session overlaps, and liquidity sweep patterns.</p>
+              <ul class="spec-list">
+                <li><span class="mono">→</span> EUR/USD, GBP/JPY, USD/JPY</li>
+                <li><span class="mono">→</span> Session overlap signals</li>
+                <li><span class="mono">→</span> Liquidity sweep detection</li>
+              </ul>
+            </div>
+          </div>
+          <div class="tab-panel" id="panel-equities">
+            <div class="tab-visual tab-chart-visual">
+              <svg class="tab-chart-svg" viewBox="0 0 480 280" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <!-- Grid -->
+                <line x1="52" y1="18" x2="52" y2="240" stroke="rgba(255,255,255,0.06)" stroke-width="1"/>
+                <line x1="52" y1="240" x2="460" y2="240" stroke="rgba(255,255,255,0.06)" stroke-width="1"/>
+                <line x1="52" y1="190" x2="460" y2="190" stroke="rgba(255,255,255,0.04)" stroke-width="1" stroke-dasharray="4 4"/>
+                <line x1="52" y1="140" x2="460" y2="140" stroke="rgba(255,255,255,0.04)" stroke-width="1" stroke-dasharray="4 4"/>
+                <line x1="52" y1="90"  x2="460" y2="90"  stroke="rgba(255,255,255,0.04)" stroke-width="1" stroke-dasharray="4 4"/>
+                <line x1="52" y1="40"  x2="460" y2="40"  stroke="rgba(255,255,255,0.04)" stroke-width="1" stroke-dasharray="4 4"/>
+                <!-- Y labels -->
+                <text x="4" y="193" font-family="JetBrains Mono,monospace" font-size="8" fill="rgba(255,255,255,0.2)">1.082</text>
+                <text x="4" y="143" font-family="JetBrains Mono,monospace" font-size="8" fill="rgba(255,255,255,0.2)">1.086</text>
+                <text x="4" y="93"  font-family="JetBrains Mono,monospace" font-size="8" fill="rgba(255,255,255,0.2)">1.090</text>
+                
+                <!-- MA line -->
+                <path d="M52 210 Q100 195 150 175 Q200 158 250 135 Q300 112 360 88 Q400 72 460 58" stroke="rgba(255,200,80,0.4)" stroke-width="1.5" fill="none"/>
+                <!-- Candles -->
+                <line x1="75"  y1="218" x2="75"  y2="195" stroke="rgba(255,255,255,0.2)" stroke-width="1"/>
+                <rect x="69"  y="198" width="12" height="18" fill="rgba(110,231,183,0.8)" stroke="#6ee7b7" stroke-width="1"/>
+                <line x1="98"  y1="210" x2="98"  y2="185" stroke="rgba(255,255,255,0.2)" stroke-width="1"/>
+                <rect x="92"  y="188" width="12" height="18" fill="rgba(231,76,60,0.7)" stroke="#c0392b" stroke-width="1"/>
+                <line x1="121" y1="202" x2="121" y2="175" stroke="rgba(255,255,255,0.2)" stroke-width="1"/>
+                <rect x="115" y="178" width="12" height="20" fill="rgba(110,231,183,0.8)" stroke="#6ee7b7" stroke-width="1"/>
+                <!-- Earnings candle (big) -->
+                <line x1="144" y1="168" x2="144" y2="108" stroke="rgba(255,255,255,0.3)" stroke-width="1"/>
+                <rect x="138" y="112" width="12" height="52" fill="rgba(110,231,183,0.9)" stroke="#6ee7b7" stroke-width="1"/>
+                <text x="148" y="106" font-family="JetBrains Mono,monospace" font-size="7" fill="rgba(255,255,255,0.4)">EARN</text>
+                <!-- Follow through -->
+                <line x1="167" y1="145" x2="167" y2="118" stroke="rgba(255,255,255,0.2)" stroke-width="1"/>
+                <rect x="161" y="121" width="12" height="22" fill="rgba(110,231,183,0.8)" stroke="#6ee7b7" stroke-width="1"/>
+                <line x1="190" y1="128" x2="190" y2="98" stroke="rgba(255,255,255,0.2)" stroke-width="1"/>
+                <rect x="184" y="102" width="12" height="24" fill="rgba(110,231,183,0.8)" stroke="#6ee7b7" stroke-width="1"/>
+                <line x1="213" y1="112" x2="213" y2="82" stroke="rgba(255,255,255,0.2)" stroke-width="1"/>
+                <rect x="207" y="86" width="12" height="24" fill="rgba(110,231,183,0.8)" stroke="#6ee7b7" stroke-width="1"/>
+                <line x1="236" y1="98" x2="236" y2="118" stroke="rgba(255,255,255,0.2)" stroke-width="1"/>
+                <rect x="230" y="101" width="12" height="14" fill="rgba(231,76,60,0.7)" stroke="#c0392b" stroke-width="1"/>
+                <line x1="259" y1="88" x2="259" y2="62" stroke="rgba(255,255,255,0.2)" stroke-width="1"/>
+                <rect x="253" y="65" width="12" height="22" fill="rgba(110,231,183,0.8)" stroke="#6ee7b7" stroke-width="1"/>
+                <line x1="282" y1="72" x2="282" y2="50" stroke="rgba(255,255,255,0.2)" stroke-width="1"/>
+                <rect x="276" y="54" width="12" height="16" fill="rgba(110,231,183,0.8)" stroke="#6ee7b7" stroke-width="1"/>
+                <text x="350" y="260" font-family="JetBrains Mono,monospace" font-size="9" fill="rgba(255,255,255,0.35)" letter-spacing="1">NVDA · D1</text>
+                <!-- Bottom label -->
+                <text x="56" y="260" font-family="JetBrains Mono,monospace" font-size="8" fill="rgba(255,255,255,0.2)" letter-spacing="1">EQUITIES</text>
+              </svg>
+            </div>
+            <div class="tab-info">
+              <h3>Equity Markets</h3>
+              <p>Identify high-probability setups on individual stocks and ETFs using institutional order flow, earnings momentum, and key support/resistance levels.</p>
+              <ul class="spec-list">
+                <li><span class="mono">→</span> AAPL, TSLA, NVDA, SPY</li>
+                <li><span class="mono">→</span> Earnings momentum plays</li>
+                <li><span class="mono">→</span> Order flow analysis</li>
+              </ul>
+            </div>
+          </div>
+          <div class="tab-panel" id="panel-commodities">
+            <div class="tab-visual tab-chart-visual">
+              <svg class="tab-chart-svg" viewBox="0 0 480 280" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <!-- Grid -->
+                <line x1="52" y1="18" x2="52" y2="240" stroke="rgba(255,255,255,0.06)" stroke-width="1"/>
+                <line x1="52" y1="240" x2="460" y2="240" stroke="rgba(255,255,255,0.06)" stroke-width="1"/>
+                <line x1="52" y1="190" x2="460" y2="190" stroke="rgba(255,255,255,0.04)" stroke-width="1" stroke-dasharray="4 4"/>
+                <line x1="52" y1="140" x2="460" y2="140" stroke="rgba(255,255,255,0.04)" stroke-width="1" stroke-dasharray="4 4"/>
+                <line x1="52" y1="90"  x2="460" y2="90"  stroke="rgba(255,255,255,0.04)" stroke-width="1" stroke-dasharray="4 4"/>
+                <line x1="52" y1="40"  x2="460" y2="40"  stroke="rgba(255,255,255,0.04)" stroke-width="1" stroke-dasharray="4 4"/>
+                <!-- Y labels -->
+                <text x="4" y="193" font-family="JetBrains Mono,monospace" font-size="8" fill="rgba(255,255,255,0.2)">1.082</text>
+                <text x="4" y="143" font-family="JetBrains Mono,monospace" font-size="8" fill="rgba(255,255,255,0.2)">1.086</text>
+                <text x="4" y="93"  font-family="JetBrains Mono,monospace" font-size="8" fill="rgba(255,255,255,0.2)">1.090</text>
+                
+                <!-- Demand zone -->
+                <rect x="52" y="168" width="408" height="30" fill="rgba(255,200,80,0.06)" stroke="rgba(255,200,80,0.2)" stroke-width="1" stroke-dasharray="5 3"/>
+                <text x="56" y="164" font-family="JetBrains Mono,monospace" font-size="7" fill="rgba(255,200,80,0.5)">DEMAND ZONE</text>
+                <!-- Candles falling into zone -->
+                <line x1="75"  y1="145" x2="75"  y2="172" stroke="rgba(255,255,255,0.2)" stroke-width="1"/>
+                <rect x="69"  y="148" width="12" height="20" fill="rgba(231,76,60,0.7)" stroke="#c0392b" stroke-width="1"/>
+                <line x1="98"  y1="152" x2="98"  y2="180" stroke="rgba(255,255,255,0.2)" stroke-width="1"/>
+                <rect x="92"  y="156" width="12" height="20" fill="rgba(231,76,60,0.7)" stroke="#c0392b" stroke-width="1"/>
+                <line x1="121" y1="162" x2="121" y2="190" stroke="rgba(255,255,255,0.2)" stroke-width="1"/>
+                <rect x="115" y="166" width="12" height="20" fill="rgba(231,76,60,0.7)" stroke="#c0392b" stroke-width="1"/>
+                <!-- Rejection + reversal -->
+                <line x1="144" y1="158" x2="144" y2="198" stroke="rgba(255,200,80,0.6)" stroke-width="1.5"/>
+                <rect x="138" y="162" width="12" height="24" fill="rgba(255,200,80,0.6)" stroke="rgba(255,200,80,0.9)" stroke-width="1"/>
+                <!-- Rally -->
+                <line x1="167" y1="138" x2="167" y2="165" stroke="rgba(255,255,255,0.2)" stroke-width="1"/>
+                <rect x="161" y="141" width="12" height="22" fill="rgba(255,200,80,0.75)" stroke="rgba(255,200,80,0.9)" stroke-width="1"/>
+                <line x1="190" y1="118" x2="190" y2="144" stroke="rgba(255,255,255,0.2)" stroke-width="1"/>
+                <rect x="184" y="122" width="12" height="20" fill="rgba(255,200,80,0.75)" stroke="rgba(255,200,80,0.9)" stroke-width="1"/>
+                <line x1="213" y1="100" x2="213" y2="125" stroke="rgba(255,255,255,0.2)" stroke-width="1"/>
+                <rect x="207" y="104" width="12" height="20" fill="rgba(255,200,80,0.75)" stroke="rgba(255,200,80,0.9)" stroke-width="1"/>
+                <line x1="236" y1="115" x2="236" y2="132" stroke="rgba(255,255,255,0.2)" stroke-width="1"/>
+                <rect x="230" y="117" width="12" height="14" fill="rgba(231,76,60,0.7)" stroke="#c0392b" stroke-width="1"/>
+                <line x1="259" y1="82" x2="259" y2="108" stroke="rgba(255,255,255,0.2)" stroke-width="1"/>
+                <rect x="253" y="86" width="12" height="20" fill="rgba(255,200,80,0.75)" stroke="rgba(255,200,80,0.9)" stroke-width="1"/>
+                <line x1="282" y1="65" x2="282" y2="90" stroke="rgba(255,255,255,0.2)" stroke-width="1"/>
+                <rect x="276" y="68" width="12" height="20" fill="rgba(255,200,80,0.75)" stroke="rgba(255,200,80,0.9)" stroke-width="1"/>
+                <!-- TP -->
+                <line x1="138" y1="58" x2="460" y2="58" stroke="rgba(255,200,80,0.3)" stroke-width="1" stroke-dasharray="5 4"/>
+                <text x="420" y="55" font-family="JetBrains Mono,monospace" font-size="8" fill="rgba(255,200,80,0.7)">TP</text>
+                <text x="350" y="260" font-family="JetBrains Mono,monospace" font-size="9" fill="rgba(255,255,255,0.35)" letter-spacing="1">XAUUSD · H1</text>
+                <!-- Bottom label -->
+                <text x="56" y="260" font-family="JetBrains Mono,monospace" font-size="8" fill="rgba(255,255,255,0.2)" letter-spacing="1">COMMODITIES</text>
+              </svg>
+            </div>
+            <div class="tab-info">
+              <h3>Commodities</h3>
+              <p>Capture structured moves in gold, oil, and silver using macro-driven frameworks, safe-haven flows, and supply-demand imbalances.</p>
+              <ul class="spec-list">
+                <li><span class="mono">→</span> XAUUSD, WTIUSD, XAGUSD</li>
+                <li><span class="mono">→</span> Macro-driven entries</li>
+                <li><span class="mono">→</span> Safe-haven flow signals</li>
+              </ul>
+            </div>
+          </div>
+          <div class="tab-panel" id="panel-crypto">
+            <div class="tab-visual tab-chart-visual">
+              <svg class="tab-chart-svg" viewBox="0 0 480 280" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <!-- Grid -->
+                <line x1="52" y1="18" x2="52" y2="240" stroke="rgba(255,255,255,0.06)" stroke-width="1"/>
+                <line x1="52" y1="240" x2="460" y2="240" stroke="rgba(255,255,255,0.06)" stroke-width="1"/>
+                <line x1="52" y1="190" x2="460" y2="190" stroke="rgba(255,255,255,0.04)" stroke-width="1" stroke-dasharray="4 4"/>
+                <line x1="52" y1="140" x2="460" y2="140" stroke="rgba(255,255,255,0.04)" stroke-width="1" stroke-dasharray="4 4"/>
+                <line x1="52" y1="90"  x2="460" y2="90"  stroke="rgba(255,255,255,0.04)" stroke-width="1" stroke-dasharray="4 4"/>
+                <line x1="52" y1="40"  x2="460" y2="40"  stroke="rgba(255,255,255,0.04)" stroke-width="1" stroke-dasharray="4 4"/>
+                <!-- Y labels -->
+                <text x="4" y="193" font-family="JetBrains Mono,monospace" font-size="8" fill="rgba(255,255,255,0.2)">1.082</text>
+                <text x="4" y="143" font-family="JetBrains Mono,monospace" font-size="8" fill="rgba(255,255,255,0.2)">1.086</text>
+                <text x="4" y="93"  font-family="JetBrains Mono,monospace" font-size="8" fill="rgba(255,255,255,0.2)">1.090</text>
+                
+                <!-- Equal highs -->
+                <line x1="52" y1="95" x2="300" y2="95" stroke="rgba(167,139,250,0.3)" stroke-width="1" stroke-dasharray="5 3"/>
+                <text x="56" y="90" font-family="JetBrains Mono,monospace" font-size="7" fill="rgba(167,139,250,0.5)">EQH</text>
+                <!-- Choppy buildup -->
+                <line x1="75"  y1="188" x2="75"  y2="160" stroke="rgba(255,255,255,0.2)" stroke-width="1"/>
+                <rect x="69"  y="163" width="12" height="22" fill="rgba(110,231,183,0.7)" stroke="#6ee7b7" stroke-width="1"/>
+                <line x1="98"  y1="178" x2="98"  y2="152" stroke="rgba(255,255,255,0.2)" stroke-width="1"/>
+                <rect x="92"  y="155" width="12" height="20" fill="rgba(231,76,60,0.7)" stroke="#c0392b" stroke-width="1"/>
+                <line x1="121" y1="168" x2="121" y2="142" stroke="rgba(255,255,255,0.2)" stroke-width="1"/>
+                <rect x="115" y="145" width="12" height="20" fill="rgba(110,231,183,0.7)" stroke="#6ee7b7" stroke-width="1"/>
+                <line x1="144" y1="158" x2="144" y2="130" stroke="rgba(255,255,255,0.2)" stroke-width="1"/>
+                <rect x="138" y="133" width="12" height="22" fill="rgba(110,231,183,0.7)" stroke="#6ee7b7" stroke-width="1"/>
+                <line x1="167" y1="148" x2="167" y2="122" stroke="rgba(255,255,255,0.2)" stroke-width="1"/>
+                <rect x="161" y="125" width="12" height="20" fill="rgba(231,76,60,0.7)" stroke="#c0392b" stroke-width="1"/>
+                <!-- Sweep wick above EQH -->
+                <line x1="190" y1="68" x2="190" y2="118" stroke="rgba(167,139,250,0.9)" stroke-width="2"/>
+                <rect x="184" y="98" width="12" height="22" fill="rgba(167,139,250,0.5)" stroke="rgba(167,139,250,0.9)" stroke-width="1"/>
+                <text x="204" y="72" font-family="JetBrains Mono,monospace" font-size="7" fill="rgba(167,139,250,0.8)">SWEEP</text>
+                <!-- Strong pump -->
+                <line x1="213" y1="85" x2="213" y2="115" stroke="rgba(255,255,255,0.2)" stroke-width="1"/>
+                <rect x="207" y="88" width="12" height="25" fill="rgba(110,231,183,0.9)" stroke="#6ee7b7" stroke-width="1"/>
+                <line x1="236" y1="62" x2="236" y2="92" stroke="rgba(255,255,255,0.2)" stroke-width="1"/>
+                <rect x="230" y="65" width="12" height="26" fill="rgba(110,231,183,0.9)" stroke="#6ee7b7" stroke-width="1"/>
+                <line x1="259" y1="44" x2="259" y2="70" stroke="rgba(255,255,255,0.2)" stroke-width="1"/>
+                <rect x="253" y="47" width="12" height="22" fill="rgba(110,231,183,0.9)" stroke="#6ee7b7" stroke-width="1"/>
+                <line x1="282" y1="30" x2="282" y2="52" stroke="rgba(255,255,255,0.2)" stroke-width="1"/>
+                <rect x="276" y="33" width="12" height="18" fill="rgba(110,231,183,0.9)" stroke="#6ee7b7" stroke-width="1"/>
+                <text x="365" y="260" font-family="JetBrains Mono,monospace" font-size="9" fill="rgba(255,255,255,0.35)" letter-spacing="1">BTC/USD · H4</text>
+                <!-- Bottom label -->
+                <text x="56" y="260" font-family="JetBrains Mono,monospace" font-size="8" fill="rgba(255,255,255,0.2)" letter-spacing="1">CRYPTO</text>
+              </svg>
+            </div>
+            <div class="tab-info">
+              <h3>Cryptocurrency</h3>
+              <p>Navigate high-volatility digital asset markets with clear structure-based signals, on-chain confirmation, and disciplined risk parameters.</p>
+              <ul class="spec-list">
+                <li><span class="mono">→</span> BTC, ETH, SOL</li>
+                <li><span class="mono">→</span> On-chain confirmation</li>
+                <li><span class="mono">→</span> Volatility-adjusted sizing</li>
+              </ul>
+            </div>
+          </div>
+          <div class="tab-panel" id="panel-indices">
+            <div class="tab-visual tab-chart-visual">
+              <svg class="tab-chart-svg" viewBox="0 0 480 280" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <!-- Grid -->
+                <line x1="52" y1="18" x2="52" y2="240" stroke="rgba(255,255,255,0.06)" stroke-width="1"/>
+                <line x1="52" y1="240" x2="460" y2="240" stroke="rgba(255,255,255,0.06)" stroke-width="1"/>
+                <line x1="52" y1="190" x2="460" y2="190" stroke="rgba(255,255,255,0.04)" stroke-width="1" stroke-dasharray="4 4"/>
+                <line x1="52" y1="140" x2="460" y2="140" stroke="rgba(255,255,255,0.04)" stroke-width="1" stroke-dasharray="4 4"/>
+                <line x1="52" y1="90"  x2="460" y2="90"  stroke="rgba(255,255,255,0.04)" stroke-width="1" stroke-dasharray="4 4"/>
+                <line x1="52" y1="40"  x2="460" y2="40"  stroke="rgba(255,255,255,0.04)" stroke-width="1" stroke-dasharray="4 4"/>
+                <!-- Y labels -->
+                <text x="4" y="193" font-family="JetBrains Mono,monospace" font-size="8" fill="rgba(255,255,255,0.2)">1.082</text>
+                <text x="4" y="143" font-family="JetBrains Mono,monospace" font-size="8" fill="rgba(255,255,255,0.2)">1.086</text>
+                <text x="4" y="93"  font-family="JetBrains Mono,monospace" font-size="8" fill="rgba(255,255,255,0.2)">1.090</text>
+                
+                <!-- Uptrend channel -->
+                <path d="M52 220 Q150 185 250 145 Q350 105 460 68" stroke="rgba(80,180,255,0.25)" stroke-width="1.5" fill="none" stroke-dasharray="6 4"/>
+                <path d="M52 240 Q150 205 250 165 Q350 125 460 88" stroke="rgba(80,180,255,0.12)" stroke-width="1" fill="none" stroke-dasharray="6 4"/>
+                <!-- Candles in trend -->
+                <line x1="75"  y1="222" x2="75"  y2="200" stroke="rgba(255,255,255,0.2)" stroke-width="1"/>
+                <rect x="69"  y="203" width="12" height="16" fill="rgba(80,180,255,0.75)" stroke="rgba(80,180,255,0.9)" stroke-width="1"/>
+                <line x1="98"  y1="210" x2="98"  y2="188" stroke="rgba(255,255,255,0.2)" stroke-width="1"/>
+                <rect x="92"  y="191" width="12" height="16" fill="rgba(80,180,255,0.75)" stroke="rgba(80,180,255,0.9)" stroke-width="1"/>
+                <!-- Pullback -->
+                <line x1="121" y1="185" x2="121" y2="205" stroke="rgba(255,255,255,0.2)" stroke-width="1"/>
+                <rect x="115" y="187" width="12" height="16" fill="rgba(231,76,60,0.7)" stroke="#c0392b" stroke-width="1"/>
+                <line x1="144" y1="190" x2="144" y2="210" stroke="rgba(255,255,255,0.2)" stroke-width="1"/>
+                <rect x="138" y="193" width="12" height="14" fill="rgba(231,76,60,0.7)" stroke="#c0392b" stroke-width="1"/>
+                <!-- Re-entry -->
+                <rect x="112" y="182" width="48" height="32" fill="rgba(80,180,255,0.06)" stroke="rgba(80,180,255,0.25)" stroke-width="1" stroke-dasharray="4 3"/>
+                <line x1="167" y1="175" x2="167" y2="152" stroke="rgba(255,255,255,0.2)" stroke-width="1"/>
+                <rect x="161" y="155" width="12" height="18" fill="rgba(80,180,255,0.75)" stroke="rgba(80,180,255,0.9)" stroke-width="1"/>
+                <line x1="190" y1="158" x2="190" y2="135" stroke="rgba(255,255,255,0.2)" stroke-width="1"/>
+                <rect x="184" y="138" width="12" height="18" fill="rgba(80,180,255,0.75)" stroke="rgba(80,180,255,0.9)" stroke-width="1"/>
+                <line x1="213" y1="138" x2="213" y2="115" stroke="rgba(255,255,255,0.2)" stroke-width="1"/>
+                <rect x="207" y="118" width="12" height="18" fill="rgba(80,180,255,0.75)" stroke="rgba(80,180,255,0.9)" stroke-width="1"/>
+                <line x1="236" y1="122" x2="236" y2="99" stroke="rgba(255,255,255,0.2)" stroke-width="1"/>
+                <rect x="230" y="102" width="12" height="18" fill="rgba(80,180,255,0.75)" stroke="rgba(80,180,255,0.9)" stroke-width="1"/>
+                <line x1="259" y1="105" x2="259" y2="82" stroke="rgba(255,255,255,0.2)" stroke-width="1"/>
+                <rect x="253" y="85" width="12" height="18" fill="rgba(80,180,255,0.75)" stroke="rgba(80,180,255,0.9)" stroke-width="1"/>
+                <line x1="282" y1="88" x2="282" y2="65" stroke="rgba(255,255,255,0.2)" stroke-width="1"/>
+                <rect x="276" y="68" width="12" height="18" fill="rgba(80,180,255,0.75)" stroke="rgba(80,180,255,0.9)" stroke-width="1"/>
+                <text x="355" y="260" font-family="JetBrains Mono,monospace" font-size="9" fill="rgba(255,255,255,0.35)" letter-spacing="1">SPX500 · D1</text>
+                <!-- Bottom label -->
+                <text x="56" y="260" font-family="JetBrains Mono,monospace" font-size="8" fill="rgba(255,255,255,0.2)" letter-spacing="1">INDICES</text>
+              </svg>
+            </div>
+            <div class="tab-info">
+              <h3>Global Indices</h3>
+              <p>Trade broad market direction on the S&amp;P 500, Nasdaq 100, and DAX using trend-following systems and macroeconomic catalysts.</p>
+              <ul class="spec-list">
+                <li><span class="mono">→</span> S&amp;P500, NQ100, DAX</li>
+                <li><span class="mono">→</span> Trend-following systems</li>
+                <li><span class="mono">→</span> Macro catalyst tracking</li>
+              </ul>
+        </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== TECHNOLOGY SECTION ==================== -->
+  <section class="tech-section dark-section" id="technology">
+    <div class="container">
+      <div class="reveal-block" data-reveal>
+        <span class="section-tag mono light-tag">05 — TECHNOLOGY</span>
+        <h2 class="section-heading light">The Intelligence Behind Our Edge</h2>
+      </div>
+      <div class="tech-layers">
+        <div class="tech-layer reveal-block" data-reveal>
+          <div class="tech-layer-num mono">01</div>
+          <div class="tech-layer-bar">
+            <div class="tech-bar-fill" style="width:92%"></div>
+          </div>
+          <div class="tech-layer-info">
+            <h3>Signal Detection Engine</h3>
+            <p>Proprietary price-action algorithms scan 30+ instruments in real-time, identifying validated key levels, liquidity zones, and high-probability reaction points.</p>
+          </div>
+        </div>
+        <div class="tech-layer reveal-block" data-reveal>
+          <div class="tech-layer-num mono">02</div>
+          <div class="tech-layer-bar">
+            <div class="tech-bar-fill" style="width:78%"></div>
+          </div>
+          <div class="tech-layer-info">
+            <h3>Risk Management Framework</h3>
+            <p>Every signal includes pre-calculated stop loss, take profit, and position size recommendations maintaining a minimum 2:1 risk-to-reward ratio.</p>
+          </div>
+        </div>
+        <div class="tech-layer reveal-block" data-reveal>
+          <div class="tech-layer-num mono">03</div>
+          <div class="tech-layer-bar">
+            <div class="tech-bar-fill" style="width:85%"></div>
+          </div>
+          <div class="tech-layer-info">
+            <h3>Backtesting Infrastructure</h3>
+            <p>All strategies are validated against 10+ years of historical data across multiple market regimes before deployment, ensuring statistical robustness.</p>
+          </div>
+        </div>
+        <div class="tech-layer reveal-block" data-reveal>
+          <div class="tech-layer-num mono">04</div>
+          <div class="tech-layer-bar">
+            <div class="tech-bar-fill" style="width:70%"></div>
+          </div>
+          <div class="tech-layer-info">
+            <h3>Alert &amp; Delivery Platform</h3>
+            <p>Real-time signal delivery via Telegram, email, and our member dashboard. Every alert includes entry, stop, targets, and full trade rationale.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== NEWSLETTER SECTION ==================== -->
+  <section class="press-section light-section" id="press">
+    <div class="container">
+      <div class="reveal-block" data-reveal>
+        <span class="section-tag mono dark-tag">06 — NEWSLETTER</span>
+        <h2 class="section-heading dark">Coming Soon</h2>
+      </div>
+      <div class="newsletter-coming reveal-block" data-reveal>
+        <div class="newsletter-coming-inner">
+          <div class="newsletter-coming-icon">
+            <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <rect x="4" y="10" width="40" height="28" rx="1" stroke="currentColor" stroke-width="1.5"/>
+              <path d="M4 14l20 14 20-14" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+            </svg>
+          </div>
+          <p class="newsletter-coming-text">Our weekly market intelligence newsletter is on its way. Get structured analysis, key level breakdowns, and trade recaps — delivered every week.</p>
+          <a href="mailto:aonamimotion@gmail.com?subject=Newsletter%20Waitlist" class="btn-outline dark-btn newsletter-notify-btn">Notify Me When It Launches →</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ==================== EARLY ACCESS CTA ==================== -->
+  <section class="cta-section dark-section" id="access">
+    <div class="container">
+      <div class="cta-inner reveal-block" data-reveal>
+        <span class="section-tag mono light-tag">GET STARTED</span>
+        <h2 class="cta-headline">Join Aonami Today</h2>
+        <p class="cta-sub">Join a growing community of disciplined traders. Get access to real-time signals, full trade rationale, and a proven edge in the financial markets.</p>
+        <form class="access-form" id="access-form">
+          <div class="form-row">
+            <input type="text" placeholder="Full Name" class="form-input" id="form-name" required />
+            <input type="email" placeholder="Email Address" class="form-input" id="form-email" required />
+          </div>
+          <div class="form-row single">
+            <select class="form-input form-select" id="form-use-case" required>
+              <option value="" disabled selected>Primary Market Interest</option>
+              <option value="forex">Forex</option>
+              <option value="equities">Equities</option>
+              <option value="commodities">Commodities (Gold / Oil)</option>
+              <option value="crypto">Cryptocurrency</option>
+              <option value="indices">Indices</option>
+              <option value="other">Other</option>
+            </select>
+          </div>
+          <button type="submit" class="btn-primary" id="form-submit">Request Access</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== FOOTER ==================== -->
+  <footer class="site-footer" id="footer">
+    <div class="footer-inner">
+      <div class="footer-brand">
+        <span class="footer-logo">Aonami</span>
+        <p class="footer-tagline mono">Superintelligent Vision<br>for the Financial World</p>
+      </div>
+      <div class="footer-cols">
+        <div class="footer-col">
+          <span class="footer-col-title mono">Service</span>
+          <a href="product.html">Our Product</a>
+          <a href="strategy.html">Our Strategy</a>
+          <a href="#applications">Markets</a>
+        </div>
+        <div class="footer-col">
+          <span class="footer-col-title mono">Company</span>
+          <a href="#press">Newsletter</a>
+          <a href="payment.html">Join Now</a>
+        </div>
+        <div class="footer-col">
+          <span class="footer-col-title mono">Contact</span>
+          <a href="mailto:aonamimotion@gmail.com">aonamimotion@gmail.com</a>
+
+          <a href="#">Privacy Policy</a>
+          <a href="#">Cookie Settings</a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span class="mono">© 2026 Aonami Studio, Inc. All rights reserved.</span>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
